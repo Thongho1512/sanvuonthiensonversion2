@@ -10,15 +10,19 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/beautiful-koi-pond-garden-landscape-with-rocks-and.jpg" alt="Sân vườn Thiên Sơn" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-foreground/50" />
+        <img
+          src="/beautiful-koi-pond-garden-landscape-with-rocks-and.jpg"
+          alt="Sân vườn Thiên Sơn"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-foreground/60" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <span className="inline-block px-4 py-2 mb-6 text-sm tracking-widest uppercase text-accent bg-accent/10 rounded-full border border-accent/20">
+            <span className="inline-block px-4 py-2 mb-6 text-sm tracking-widest uppercase text-card bg-card/10 rounded-full border border-card/30 text-shadow-sm">
               Chuyên gia sân vườn cao cấp
             </span>
           </motion.div>
@@ -27,18 +31,18 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-card leading-tight tracking-tight text-balance"
+            className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-card leading-tight tracking-tight text-balance text-shadow-lg"
           >
             Kiến tạo không gian
             <br />
-            <span className="text-accent">xanh hoàn mỹ</span>
+            <span className="text-accent text-shadow-lg">xanh hoàn mỹ</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-6 text-lg sm:text-xl text-card/80 max-w-xl leading-relaxed"
+            className="mt-6 text-lg sm:text-xl text-card/90 max-w-xl leading-relaxed text-shadow"
           >
             Thiết kế và thi công hồ cá Koi, hòn non bộ, tiểu cảnh sân vườn với hơn 15 năm kinh nghiệm và đội ngũ chuyên
             nghiệp hàng đầu.
@@ -84,8 +88,8 @@ export function HeroSection() {
             { value: "50+", label: "Đội ngũ chuyên gia" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="text-3xl sm:text-4xl font-semibold text-accent">{stat.value}</p>
-              <p className="mt-2 text-sm text-card/70">{stat.label}</p>
+              <p className="text-3xl sm:text-4xl font-semibold text-accent text-shadow-lg">{stat.value}</p>
+              <p className="mt-2 text-sm text-card/80 text-shadow-sm">{stat.label}</p>
             </div>
           ))}
         </motion.div>
