@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Breadcrumb } from "@/components/breadcrumb"
-import { ContactForm } from "@/components/contact-form"
+import { ContactHero } from "@/components/contact-hero"
+import { ContactFormSection } from "@/components/contact-form-section"
 import { ContactInfo } from "@/components/contact-info"
+import { ContactFAQ } from "@/components/contact-faq"
 
 export const metadata: Metadata = {
   title: "Liên Hệ | Sân Vườn Thiên Sơn",
@@ -16,12 +17,11 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <main className="pt-20 bg-background">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={[{ label: "Liên hệ" }]} />
-        </div>
-        <ContactForm />
+      <main className="bg-background">
+        <ContactHero />
+        <ContactFormSection />
         <ContactInfo />
+        <ContactFAQ />
       </main>
       <Footer />
     </>
