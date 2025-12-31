@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { FloatingContact } from "@/components/floating-contact"
 import "./globals.css"
 
 const cormorant = Cormorant_Garamond({
@@ -49,6 +50,7 @@ export default function RootLayout({
     <html lang="vi">
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased`}>
         {children}
+        <FloatingContact />
         <Analytics />
       </body>
     </html>
