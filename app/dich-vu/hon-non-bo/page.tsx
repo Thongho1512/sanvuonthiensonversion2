@@ -7,7 +7,6 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
-import { Mountain, Compass, Gem, Palette, Wind, Leaf } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Hòn Non Bộ & Tiểu Cảnh | Sân Vườn Thiên Sơn",
@@ -18,32 +17,32 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    icon: Compass,
+    icon: "Compass",
     title: "Tư vấn phong thủy chuyên sâu",
     description: "Đội ngũ chuyên gia phong thủy tư vấn vị trí, hướng đặt và các yếu tố ngũ hành phù hợp.",
   },
   {
-    icon: Gem,
+    icon: "Gem",
     title: "Đá tự nhiên cao cấp",
     description: "Sử dụng các loại đá quý hiếm như đá vân mây, đá hoa cương, đá thạch anh từ các mỏ uy tín.",
   },
   {
-    icon: Mountain,
+    icon: "Mountain",
     title: "Nghệ nhân lành nghề",
     description: "Đội ngũ nghệ nhân với hơn 20 năm kinh nghiệm tạo tác hòn non bộ truyền thống.",
   },
   {
-    icon: Palette,
+    icon: "Palette",
     title: "Thiết kế độc quyền",
     description: "Mỗi tác phẩm là một thiết kế độc nhất, không trùng lặp, phản ánh cá tính chủ nhân.",
   },
   {
-    icon: Wind,
+    icon: "Wind",
     title: "Hệ thống nước tuần hoàn",
     description: "Tích hợp thác nước, suối nhân tạo với hệ thống bơm tuần hoàn tiết kiệm năng lượng.",
   },
   {
-    icon: Leaf,
+    icon: "Leaf",
     title: "Cây cảnh nghệ thuật",
     description: "Kết hợp các loại cây bonsai, dương xỉ, rêu tạo nên cảnh quan thiên nhiên thu nhỏ.",
   },

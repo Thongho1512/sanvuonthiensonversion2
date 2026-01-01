@@ -1,26 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Award, Users, Clock, Shield } from "lucide-react"
+import * as LucideIcons from "lucide-react"
 
 const features = [
   {
-    icon: Award,
+    icon: "Award",
     title: "Chất lượng hàng đầu",
     description: "Cam kết sử dụng vật liệu cao cấp và kỹ thuật thi công chuẩn quốc tế.",
   },
   {
-    icon: Users,
+    icon: "Users",
     title: "Đội ngũ chuyên nghiệp",
     description: "Hơn 50 kỹ sư và nghệ nhân với nhiều năm kinh nghiệm trong ngành.",
   },
   {
-    icon: Clock,
+    icon: "Clock",
     title: "Đúng tiến độ",
     description: "Cam kết hoàn thành công trình đúng thời gian thỏa thuận với khách hàng.",
   },
   {
-    icon: Shield,
+    icon: "Shield",
     title: "Bảo hành dài hạn",
     description: "Chế độ bảo hành lên đến 5 năm và hỗ trợ bảo trì trọn đời.",
   },
@@ -48,26 +48,30 @@ export function WhyChooseUs() {
             </p>
 
             <div className="mt-10 grid sm:grid-cols-2 gap-8">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex gap-4"
-                >
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center">
-                      <feature.icon className="h-6 w-6 text-accent" />
+              {features.map((feature, index) => {
+                const IconComponent = LucideIcons[feature.icon as keyof typeof LucideIcons] as React.ElementType
+                
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="flex gap-4"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center">
+                        {IconComponent && <IconComponent className="h-6 w-6 text-accent" />}
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">{feature.title}</h3>
-                    <p className="mt-1 text-sm text-primary-foreground/70">{feature.description}</p>
-                  </div>
-                </motion.div>
-              ))}
+                    <div>
+                      <h3 className="font-semibold text-lg">{feature.title}</h3>
+                      <p className="mt-1 text-sm text-primary-foreground/70">{feature.description}</p>
+                    </div>
+                  </motion.div>
+                )
+              })}
             </div>
           </motion.div>
 

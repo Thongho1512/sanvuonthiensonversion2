@@ -7,7 +7,6 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
-import { TreePalm, Ruler, Lightbulb, Droplets, Sun, Leaf } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Thiết Kế Sân Vườn | Sân Vườn Thiên Sơn",
@@ -18,32 +17,32 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    icon: Ruler,
+    icon: "Ruler",
     title: "Thiết kế 3D chuyên nghiệp",
     description: "Bản vẽ 3D chi tiết giúp khách hàng hình dung rõ ràng không gian sân vườn trước khi thi công.",
   },
   {
-    icon: TreePalm,
+    icon: "TreePalm",
     title: "Cây xanh nhập khẩu",
     description: "Hệ thống cây xanh từ các vườn ươm uy tín, đảm bảo chất lượng và độ phát triển.",
   },
   {
-    icon: Droplets,
+    icon: "Droplets",
     title: "Hệ thống tưới tự động",
     description: "Tích hợp hệ thống tưới nhỏ giọt, phun sương thông minh, tiết kiệm nước và công chăm sóc.",
   },
   {
-    icon: Lightbulb,
+    icon: "Lightbulb",
     title: "Chiếu sáng cảnh quan",
     description: "Thiết kế hệ thống đèn LED cảnh quan, tạo điểm nhấn và không gian lung linh về đêm.",
   },
   {
-    icon: Sun,
+    icon: "Sun",
     title: "Tối ưu ánh sáng tự nhiên",
     description: "Bố trí cây xanh và không gian nghỉ ngơi theo hướng nắng, tạo bóng mát hợp lý.",
   },
   {
-    icon: Leaf,
+    icon: "Leaf",
     title: "Bảo trì định kỳ",
     description: "Dịch vụ chăm sóc cây xanh, cắt tỉa và bảo dưỡng hệ thống định kỳ hàng tháng.",
   },

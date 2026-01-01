@@ -7,7 +7,6 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
-import { Droplets, Fish, Settings, Shield, Sparkles, ThermometerSun } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Thi Công Hồ Cá Koi | Sân Vườn Thiên Sơn",
@@ -18,32 +17,32 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    icon: Fish,
+    icon: "Fish",
     title: "Thiết kế theo tiêu chuẩn Nhật Bản",
     description: "Áp dụng các nguyên tắc thiết kế hồ Koi truyền thống Nhật Bản, đảm bảo tính thẩm mỹ và chức năng.",
   },
   {
-    icon: Droplets,
+    icon: "Droplets",
     title: "Hệ thống lọc nước tiên tiến",
     description: "Trang bị hệ thống lọc đa tầng, UV diệt khuẩn và oxy hóa, duy trì chất lượng nước tối ưu.",
   },
   {
-    icon: ThermometerSun,
+    icon: "ThermometerSun",
     title: "Kiểm soát nhiệt độ",
     description: "Hệ thống điều hòa nhiệt độ tự động, phù hợp với khí hậu nhiệt đới Việt Nam.",
   },
   {
-    icon: Settings,
+    icon: "Settings",
     title: "Kỹ thuật thi công chuyên nghiệp",
     description: "Đội ngũ kỹ thuật viên giàu kinh nghiệm, thi công theo quy trình nghiêm ngặt.",
   },
   {
-    icon: Shield,
+    icon: "Shield",
     title: "Chống thấm tuyệt đối",
     description: "Sử dụng vật liệu chống thấm cao cấp, đảm bảo không rò rỉ trong suốt vòng đời công trình.",
   },
   {
-    icon: Sparkles,
+    icon: "Sparkles",
     title: "Thiết kế cảnh quan tích hợp",
     description: "Kết hợp hồ Koi với cảnh quan xung quanh, tạo nên không gian hài hòa và thẩm mỹ.",
   },
