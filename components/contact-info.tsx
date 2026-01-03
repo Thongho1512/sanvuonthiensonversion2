@@ -7,20 +7,20 @@ import { Button } from "@/components/ui/button"
 const offices = [
   {
     city: "TP. Hồ Chí Minh",
-    address: "123 Đường ABC, Phường XYZ, Quận 1",
-    phone: "090 123 4567",
-    email: "hcm@thienson.vn",
+    address: "178/19/33 Trương Thị Hoa, P.Tân Thới Hiệp, Q12",
+    phone: "0938 38 66 79",
+    email: "sanvuonthienson@gmail.com",
     hours: "8:00 - 18:00",
-    mapUrl: "https://maps.google.com/?q=10.7757,106.6998",
+    mapUrl: "https://maps.google.com/?q=10.863,106.646",
     isMain: true,
   },
   {
-    city: "Hà Nội",
-    address: "456 Đường DEF, Phường GHI, Quận Hoàn Kiếm",
-    phone: "091 234 5678",
-    email: "hanoi@thienson.vn",
+    city: "Chi nhánh Bà Rịa - Vũng Tàu",
+    address: "315 Hùng Vương, TT Ngãi Giao, Châu Đức – BR-VT",
+    phone: "0938 38 66 79",
+    email: "sanvuonthienson@gmail.com",
     hours: "8:00 - 18:00",
-    mapUrl: "https://maps.google.com/?q=21.0285,105.8542",
+    mapUrl: "https://maps.google.com/?q=315+Hung+Vuong+Ngai+Giao+Chau+Duc+Ba+Ria+Vung+Tau",
     isMain: false,
   },
 ]
@@ -110,7 +110,7 @@ export function ContactInfo() {
           ))}
         </div>
 
-        {/* Full Width Map */}
+        {/* Full Width Map - Updated with correct coordinates and removed grayscale */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +119,7 @@ export function ContactInfo() {
           className="rounded-2xl overflow-hidden border border-border"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4946!2d106.6998!3d10.7757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzMyLjUiTiAxMDbCsDQxJzU5LjMiRQ!5e0!3m2!1sen!2s!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4!2d106.646!3d10.863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUxJzQ2LjgiTiAxMDbCsDM4JzQ1LjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -127,7 +127,6 @@ export function ContactInfo() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Bản đồ văn phòng Thiên Sơn"
-            className="grayscale hover:grayscale-0 transition-all duration-500"
           />
         </motion.div>
       </div>

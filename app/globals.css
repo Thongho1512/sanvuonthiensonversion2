@@ -125,10 +125,10 @@
   }
   body {
     @apply bg-background text-foreground;
-    /* TĂNG CỠ CHỮ VÀ ĐỘ ĐẬM */
-    font-size: 17px; /* Tăng từ mặc định 14px lên 17px */
-    line-height: 1.7;
-    font-weight: 450; /* Tăng độ đậm nhẹ */
+    /* TĂNG CỠ CHỮ VÀ ĐỘ ĐẬM - TĂNG MẠNH HƠN */
+    font-size: 18px; /* Tăng từ 17px lên 18px */
+    line-height: 1.75; /* Tăng line-height từ 1.7 lên 1.75 */
+    font-weight: 500; /* Tăng từ 450 lên 500 */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -137,22 +137,74 @@
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700; /* Đậm hơn */
     color: oklch(0.10 0.02 150); /* Màu đen đậm hơn */
+    line-height: 1.3; /* Tăng khoảng cách dòng */
   }
   
-  /* TĂNG ĐỘ ĐẬM CHO PARAGRAPH */
+  /* CỠ CHỮ CỤ THỂ CHO TỪNG HEADING */
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
+  
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+  
+  h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  h5 {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  h6 {
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  /* TĂNG ĐỘ ĐẬM VÀ CỠ CHỮ CHO PARAGRAPH */
   p {
-    font-weight: 450;
+    font-weight: 500; /* Tăng từ 450 lên 500 */
     color: oklch(0.25 0.01 150); /* Đậm hơn từ 0.45 → 0.25 */
+    font-size: 1.125rem; /* 18px - tăng từ mặc định */
+    line-height: 1.8; /* Tăng khoảng cách dòng */
   }
   
   /* ĐỘ ĐẬM CHO LINK */
   a {
-    font-weight: 500;
+    font-weight: 600; /* Tăng từ 500 lên 600 */
+    font-size: 1.0625rem; /* 17px */
   }
   
   /* ĐỘ ĐẬM CHO BUTTON TEXT */
   button {
     font-weight: 600;
+    font-size: 1.0625rem; /* 17px */
+  }
+
+  /* TĂNG CỠ CHỮ CHO TEXT NHỎ */
+  .text-sm {
+    font-size: 0.9375rem; /* 15px thay vì 14px */
+  }
+
+  .text-xs {
+    font-size: 0.8125rem; /* 13px thay vì 12px */
+  }
+
+  /* TĂNG CỠ CHỮ CHO TEXT LỚN */
+  .text-lg {
+    font-size: 1.25rem; /* 20px thay vì 18px */
+  }
+
+  .text-xl {
+    font-size: 1.375rem; /* 22px thay vì 20px */
+  }
+
+  .text-2xl {
+    font-size: 1.625rem; /* 26px thay vì 24px */
   }
 }
 
