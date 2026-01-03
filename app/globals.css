@@ -124,6 +124,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-size: 18px; /* Tăng cỡ chữ cơ bản */
+    line-height: 1.7; /* Tăng khoảng cách dòng để dễ đọc hơn */
   }
 }
 

@@ -2,174 +2,197 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Phone, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
-const navigation = [
-  { name: "Trang chủ", href: "/" },
-  {
-    name: "Dịch vụ",
-    href: "/dich-vu",
-    children: [
-      { name: "Hồ cá Koi", href: "/dich-vu/ho-ca-koi" },
-      { name: "Hòn non bộ", href: "/dich-vu/hon-non-bo" },
-      { name: "Thiết kế sân vườn", href: "/dich-vu/thiet-ke-san-vuon" },
-    ],
-  },
-  { name: "Dự án", href: "/du-an" },
-  { name: "Về chúng tôi", href: "/ve-chung-toi" },
-  { name: "Liên hệ", href: "/lien-he" },
-]
+import Image from "next/image"
+import { Menu, X, Home, Droplets, Mountain, TreePalm, Briefcase, Users, Mail } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+      setScrolled(window.scrollY > 20)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Lock body scroll when sidebar is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
+  const navItems = [
+    { label: "Trang Chủ", href: "/", icon: Home },
+    { label: "Dịch Vụ", href: "/dich-vu", icon: Briefcase },
+    { label: "Hồ Cá Koi", href: "/dich-vu/ho-ca-koi", icon: Droplets },
+    { label: "Hòn Non Bộ", href: "/dich-vu/hon-non-bo", icon: Mountain },
+    { label: "Thiết Kế Sân Vườn", href: "/dich-vu/thiet-ke-san-vuon", icon: TreePalm },
+    { label: "Dự Án", href: "/du-an", icon: Briefcase },
+    { label: "Về Chúng Tôi", href: "/ve-chung-toi", icon: Users },
+    { label: "Liên Hệ", href: "/lien-he", icon: Mail },
+  ]
+
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
-      }`}
-    >
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+    <>
+      {/* Header */}
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white/80 backdrop-blur-sm"
+        }`}
+      >
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative">
-              <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-semibold text-xl">TS</span>
+          <Link href="/" className="flex items-center z-50">
+            <div className="relative h-12 sm:h-14 md:h-16 w-auto">
+              <div className="h-full w-12 sm:w-14 md:w-16 rounded-full bg-primary flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                <span className="text-primary-foreground font-semibold text-xl sm:text-2xl">TS</span>
               </div>
             </div>
-            <div className="hidden sm:block">
-              <p className={`text-xl font-semibold tracking-wide ${scrolled ? "text-foreground" : "text-card"}`}>
+            <div className="ml-3 hidden sm:block">
+              <p className="text-lg sm:text-xl font-semibold tracking-wide text-foreground">
                 Thiên Sơn
               </p>
-              <p className={`text-xs tracking-widest uppercase ${scrolled ? "text-muted-foreground" : "text-card/70"}`}>
+              <p className="text-xs tracking-widest uppercase text-muted-foreground">
                 Sân Vườn
               </p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navigation.map((item) => (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() => item.children && setActiveDropdown(item.name)}
-                onMouseLeave={() => setActiveDropdown(null)}
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`text-sm xl:text-base font-medium transition-colors hover:text-primary relative group ${
+                  pathname === item.href ? "text-primary font-semibold" : "text-foreground"
+                }`}
               >
-                <Link
-                  href={item.href}
-                  className={`flex items-center gap-1 text-sm font-medium tracking-wide transition-colors hover:text-accent ${
-                    scrolled ? "text-foreground" : "text-card"
-                  }`}
-                >
-                  {item.name}
-                  {item.children && <ChevronDown className="h-4 w-4" />}
-                </Link>
-
-                {/* Dropdown */}
-                <AnimatePresence>
-                  {item.children && activeDropdown === item.name && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: 10 }}
-                      transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-card rounded-lg shadow-xl border border-border overflow-hidden"
-                    >
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block px-4 py-3 text-sm text-card-foreground hover:bg-muted transition-colors"
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+                {item.label}
+                {pathname === item.href && (
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full" />
+                )}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full" />
+              </Link>
             ))}
           </div>
 
-          {/* CTA & Mobile Menu */}
-          <div className="flex items-center gap-4">
-            <a href="tel:0901234567" className="hidden md:flex items-center gap-2 text-sm">
-              <Phone className={`h-4 w-4 ${scrolled ? "text-primary" : "text-accent"}`} />
-              <span className={scrolled ? "text-foreground" : "text-card"}>090 123 4567</span>
-            </a>
-            <Button asChild className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/lien-he">Liên hệ tư vấn</Link>
-            </Button>
+          {/* Mobile Menu Button */}
+          <button
+            className={`lg:hidden p-2 rounded-full transition-all z-50 ${
+              isOpen 
+                ? "bg-primary text-primary-foreground hover:bg-primary/90" 
+                : "hover:bg-muted text-foreground"
+            }`}
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <Menu size={24} />
+          </button>
+        </nav>
+      </header>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className={`lg:hidden p-2 ${scrolled ? "text-foreground" : "text-card"}`}
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+      {/* Overlay with blur */}
+      <div
+        className={`fixed inset-0 bg-black/30 backdrop-blur-md z-40 lg:hidden transition-all duration-500 ${
+          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Glassmorphism Floating Sidebar */}
+      <div
+        className={`fixed top-4 right-4 bottom-4 w-[360px] rounded-3xl z-40 lg:hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "translate-x-0 opacity-100" : "translate-x-[400px] opacity-0"
+        }`}
+        style={{
+          background: 'rgba(255, 255, 255, 0.85)',
+          backdropFilter: 'blur(20px) saturate(180%)',
+          WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+          border: '1px solid rgba(255, 255, 255, 0.5)',
+          boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.3) inset'
+        }}
+      >
+        <div className="h-full flex flex-col p-6 pt-20 overflow-y-auto">
+          {/* Close Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/40 backdrop-blur-sm hover:bg-white/60 flex items-center justify-center transition-all border border-white/50"
+            aria-label="Close menu"
+          >
+            <X size={20} className="text-gray-800" />
+          </button>
+
+          {/* Title */}
+          <div className="mb-6">
+            <h2 className="text-2xl font-bold text-foreground drop-shadow-sm">Menu</h2>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="flex-1 space-y-3">
+            {navItems.map((item, index) => {
+              const Icon = item.icon
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`flex items-center gap-4 px-5 py-4 rounded-xl transition-all duration-300 group backdrop-blur-sm ${
+                    pathname === item.href 
+                      ? "bg-white/60 text-primary shadow-sm border border-white/50" 
+                      : "text-foreground hover:bg-white/40 hover:text-primary border border-transparent hover:border-white/30"
+                  }`}
+                  style={{
+                    animation: isOpen ? `slideIn 0.3s ease-out ${index * 0.05}s both` : "none"
+                  }}
+                >
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all backdrop-blur-sm ${
+                    pathname === item.href
+                      ? "bg-primary/20 border border-primary/30"
+                      : "bg-white/30 group-hover:bg-primary/20 border border-white/30 group-hover:border-primary/30"
+                  }`}>
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <span className="font-semibold text-base drop-shadow-sm">{item.label}</span>
+                </Link>
+              )
+            })}
+          </nav>
+
+          {/* Contact Info in Sidebar */}
+          <div className="mt-6 pt-6 border-t border-white/30">
+            <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+              <p className="text-sm font-semibold text-foreground mb-2">Liên hệ tư vấn</p>
+              <a 
+                href="tel:0901234567" 
+                className="text-primary font-bold text-lg hover:text-primary/80 transition-colors"
+              >
+                090 123 4567
+              </a>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-card rounded-lg mt-2 overflow-hidden shadow-xl"
-            >
-              <div className="px-4 py-6 space-y-4">
-                {navigation.map((item) => (
-                  <div key={item.name}>
-                    <Link
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="block py-2 text-foreground font-medium"
-                    >
-                      {item.name}
-                    </Link>
-                    {item.children && (
-                      <div className="pl-4 space-y-2 mt-2">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.name}
-                            href={child.href}
-                            onClick={() => setIsOpen(false)}
-                            className="block py-1 text-muted-foreground text-sm"
-                          >
-                            {child.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
-                <Button asChild className="w-full mt-4 bg-primary text-primary-foreground">
-                  <Link href="/lien-he">Liên hệ tư vấn</Link>
-                </Button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
-    </motion.header>
+      <style jsx>{`
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateX(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
+    </>
   )
 }
