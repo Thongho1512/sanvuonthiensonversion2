@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone, MapPin, Mail } from "lucide-react";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
