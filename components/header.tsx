@@ -44,25 +44,20 @@ export function Header() {
       {/* Header */}
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white/80 backdrop-blur-sm"
+          scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center z-50">
-            <div className="relative h-12 sm:h-14 md:h-16 w-auto">
-              <div className="h-full w-12 sm:w-14 md:w-16 rounded-full bg-primary flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                <span className="text-primary-foreground font-semibold text-xl sm:text-2xl">TS</span>
-              </div>
-            </div>
-            <div className="ml-3 hidden sm:block">
-              <p className="text-lg sm:text-xl font-semibold tracking-wide text-foreground">
-                Thiên Sơn
-              </p>
-              <p className="text-xs tracking-widest uppercase text-muted-foreground">
-                Sân Vườn
-              </p>
-            </div>
+            <Image
+              src="/logo-removebg-preview.png"
+              alt="Thiên Sơn Logo"
+              width={180}
+              height={72}
+              className="h-12 sm:h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -71,15 +66,21 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.href}
-                className={`text-sm xl:text-base font-medium transition-colors hover:text-primary relative group ${
-                  pathname === item.href ? "text-primary font-semibold" : "text-foreground"
+                className={`text-sm xl:text-base font-medium transition-colors relative group ${
+                  scrolled 
+                    ? (pathname === item.href ? "text-primary font-semibold" : "text-foreground hover:text-primary")
+                    : (pathname === item.href ? "text-white font-semibold" : "text-white/90 hover:text-white")
                 }`}
               >
                 {item.label}
                 {pathname === item.href && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary rounded-full" />
+                  <span className={`absolute -bottom-1 left-0 w-full h-0.5 rounded-full ${
+                    scrolled ? "bg-primary" : "bg-white"
+                  }`} />
                 )}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full" />
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 rounded-full transition-all duration-300 group-hover:w-full ${
+                  scrolled ? "bg-primary" : "bg-white"
+                }`} />
               </Link>
             ))}
           </div>
@@ -89,7 +90,9 @@ export function Header() {
             className={`lg:hidden p-2 rounded-full transition-all z-50 ${
               isOpen 
                 ? "bg-primary text-primary-foreground hover:bg-primary/90" 
-                : "hover:bg-muted text-foreground"
+                : scrolled
+                  ? "hover:bg-muted text-foreground"
+                  : "hover:bg-white/10 text-white"
             }`}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"

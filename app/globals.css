@@ -5,21 +5,22 @@
 
 /* Premium landscaping theme with deep greens, earth tones, and gold accents */
 :root {
+  /* TĂNG ĐỘ ĐẬM CỦA MÀU CHỮ */
   --background: oklch(0.98 0.005 90);
-  --foreground: oklch(0.2 0.02 150);
+  --foreground: oklch(0.12 0.02 150); /* Đậm hơn từ 0.2 → 0.12 */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.02 150);
+  --card-foreground: oklch(0.12 0.02 150); /* Đậm hơn từ 0.2 → 0.12 */
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.02 150);
+  --popover-foreground: oklch(0.12 0.02 150); /* Đậm hơn */
   --primary: oklch(0.35 0.08 150);
   --primary-foreground: oklch(0.98 0.005 90);
   --secondary: oklch(0.45 0.05 80);
   --secondary-foreground: oklch(0.98 0.005 90);
   --muted: oklch(0.94 0.01 90);
-  --muted-foreground: oklch(0.45 0.02 150);
+  --muted-foreground: oklch(0.35 0.02 150); /* Đậm hơn từ 0.45 → 0.35 */
   /* Brighter gold accent for better contrast on dark backgrounds */
   --accent: oklch(0.82 0.14 85);
-  --accent-foreground: oklch(0.2 0.02 150);
+  --accent-foreground: oklch(0.15 0.02 150); /* Đậm hơn từ 0.2 → 0.15 */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.88 0.02 90);
@@ -32,11 +33,11 @@
   --chart-5: oklch(0.6 0.08 80);
   --radius: 0.5rem;
   --sidebar: oklch(0.98 0.005 90);
-  --sidebar-foreground: oklch(0.2 0.02 150);
+  --sidebar-foreground: oklch(0.12 0.02 150); /* Đậm hơn */
   --sidebar-primary: oklch(0.35 0.08 150);
   --sidebar-primary-foreground: oklch(0.98 0.005 90);
   --sidebar-accent: oklch(0.94 0.01 90);
-  --sidebar-accent-foreground: oklch(0.2 0.02 150);
+  --sidebar-accent-foreground: oklch(0.12 0.02 150); /* Đậm hơn */
   --sidebar-border: oklch(0.88 0.02 90);
   --sidebar-ring: oklch(0.35 0.08 150);
 }
@@ -124,8 +125,34 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-size: 18px; /* Tăng cỡ chữ cơ bản */
-    line-height: 1.7; /* Tăng khoảng cách dòng để dễ đọc hơn */
+    /* TĂNG CỠ CHỮ VÀ ĐỘ ĐẬM */
+    font-size: 17px; /* Tăng từ mặc định 14px lên 17px */
+    line-height: 1.7;
+    font-weight: 450; /* Tăng độ đậm nhẹ */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* TĂNG ĐỘ ĐẬM CHO HEADING */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Đậm hơn */
+    color: oklch(0.10 0.02 150); /* Màu đen đậm hơn */
+  }
+  
+  /* TĂNG ĐỘ ĐẬM CHO PARAGRAPH */
+  p {
+    font-weight: 450;
+    color: oklch(0.25 0.01 150); /* Đậm hơn từ 0.45 → 0.25 */
+  }
+  
+  /* ĐỘ ĐẬM CHO LINK */
+  a {
+    font-weight: 500;
+  }
+  
+  /* ĐỘ ĐẬM CHO BUTTON TEXT */
+  button {
+    font-weight: 600;
   }
 }
 
