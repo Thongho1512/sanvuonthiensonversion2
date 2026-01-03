@@ -49,24 +49,7 @@ export default function ProjectsHero() {
             <span>15+ năm kinh nghiệm</span>
           </div>
 
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-3">
-            <button className="px-6 py-2.5 bg-[#00ff41] text-[#0d1f19] rounded-full font-semibold text-sm hover:bg-[#00ff41]/90 transition-colors">
-              Tất cả
-            </button>
-            <button className="px-6 py-2.5 bg-white/10 backdrop-blur-sm text-white rounded-full font-medium text-sm hover:bg-white/15 transition-colors border border-white/10">
-              Hồ cá Koi
-            </button>
-            <button className="px-6 py-2.5 bg-white/10 backdrop-blur-sm text-white rounded-full font-medium text-sm hover:bg-white/15 transition-colors border border-white/10">
-              Hòn non bộ
-            </button>
-            <button className="px-6 py-2.5 bg-white/10 backdrop-blur-sm text-white rounded-full font-medium text-sm hover:bg-white/15 transition-colors border border-white/10">
-              Sân vườn
-            </button>
-            <button className="px-6 py-2.5 bg-white/10 backdrop-blur-sm text-white rounded-full font-medium text-sm hover:bg-white/15 transition-colors border border-white/10">
-              Video thi công
-            </button>
-          </div>
+          
         </motion.div>
       </div>
 

@@ -30,12 +30,12 @@ export function Header() {
 
   const navItems = [
     { label: "Trang Chủ", href: "/", icon: Home },
-    { label: "Dịch Vụ", href: "/dich-vu", icon: Briefcase },
+    // { label: "Dịch Vụ", href: "/dich-vu", icon: Briefcase },
     { label: "Hồ Cá Koi", href: "/dich-vu/ho-ca-koi", icon: Droplets },
     { label: "Hòn Non Bộ", href: "/dich-vu/hon-non-bo", icon: Mountain },
     { label: "Thiết Kế Sân Vườn", href: "/dich-vu/thiet-ke-san-vuon", icon: TreePalm },
     { label: "Dự Án", href: "/du-an", icon: Briefcase },
-    { label: "Về Chúng Tôi", href: "/ve-chung-toi", icon: Users },
+    // { label: "Về Chúng Tôi", href: "/ve-chung-toi", icon: Users },
     { label: "Liên Hệ", href: "/lien-he", icon: Mail },
   ]
 

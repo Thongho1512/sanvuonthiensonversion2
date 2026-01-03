@@ -2,19 +2,11 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { MapPin, Calendar, Image as ImageIcon, Video, Box } from "lucide-react"
-
-const categories = [
-  { id: "all", name: "Tất cả" },
-  { id: "ho-koi", name: "Hồ cá Koi" },
-  { id: "hon-non-bo", name: "Hòn non bộ" },
-  { id: "san-vuon", name: "Sân vườn" },
-]
+import { MapPin, Calendar, Image as ImageIcon, Video } from "lucide-react"
 
 const mediaTypes = [
   { id: "images", name: "Hình Ảnh", icon: ImageIcon },
-  { id: "videos", name: "Video Thực Tế", icon: Video },
-  { id: "3d", name: "Phối Cảnh 3D", icon: Box }, // Đổi từ Cube → Box
+  { id: "videos", name: "Video", icon: Video },
 ]
 
 const projects = [
@@ -72,7 +64,7 @@ const projects = [
     area: "45m²",
     image: "/project-rooftop-koi-landmark.jpg",
     description: "Hồ Koi sân thượng với view thành phố và hệ thống đèn LED cảnh quan.",
-    type: "3d",
+    type: "images",
   },
   {
     id: 6,
@@ -99,14 +91,14 @@ const projects = [
   },
   {
     id: 8,
-    title: "Văn phòng Techcombank 3D",
+    title: "Văn phòng Techcombank",
     category: "hon-non-bo",
     location: "Quận 1, TP.HCM",
     year: "2024",
     area: "50m²",
     image: "/project-office-lobby-tcb.jpg",
     description: "Tiểu cảnh sảnh văn phòng với thiết kế hiện đại và chất liệu cao cấp.",
-    type: "3d",
+    type: "images",
   },
   {
     id: 9,
@@ -164,28 +156,15 @@ function ProjectCard({ project, index, featured = false, onVideoClick }: Project
             </button>
           )}
 
-          {/* Category Badge */}
-          <div className="absolute top-4 left-4">
-            <span className="px-4 py-1.5 bg-primary backdrop-blur-sm text-primary-foreground text-sm font-semibold rounded-full shadow-lg">
-              {categories.find((c) => c.id === project.category)?.name}
-            </span>
-          </div>
-
           {/* Type Badge */}
-          <div className="absolute top-4 right-4">
-            {project.type === "videos" && (
+          {project.type === "videos" && (
+            <div className="absolute top-4 right-4">
               <span className="px-3 py-1.5 bg-red-500 backdrop-blur-sm text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
                 <Video className="h-3 w-3" />
                 VIDEO
               </span>
-            )}
-            {project.type === "3d" && (
-              <span className="px-3 py-1.5 bg-blue-500 backdrop-blur-sm text-white text-xs font-semibold rounded-full shadow-lg flex items-center gap-1">
-                <Box className="h-3 w-3" />
-                3D
-              </span>
-            )}
-          </div>
+            </div>
+          )}
 
           {/* Info Overlay */}
           <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -210,22 +189,17 @@ function ProjectCard({ project, index, featured = false, onVideoClick }: Project
 }
 
 export function ProjectsGrid() {
-  const [activeCategory, setActiveCategory] = useState("all")
   const [activeMediaType, setActiveMediaType] = useState("images")
   const [featuredVideo, setFeaturedVideo] = useState<number | null>(null)
 
-  const filteredProjects = projects.filter(p => {
-    const categoryMatch = activeCategory === "all" || p.category === activeCategory
-    const mediaMatch = activeMediaType === "images" || p.type === activeMediaType
-    return categoryMatch && mediaMatch
-  })
+  const filteredProjects = projects.filter(p => p.type === activeMediaType)
   
   const currentVideo = projects.find(p => p.id === featuredVideo)
 
   return (
-    <section className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
+    <section className="bg-background">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600 text-white py-20 lg:py-28">
+      <div className="bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -233,16 +207,16 @@ export function ProjectsGrid() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <span className="inline-block px-4 py-2 bg-primary/20 backdrop-blur-sm text-primary-foreground rounded-full text-sm font-semibold mb-6">
-              Hình Ảnh Công Trình
+            <span className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm text-accent-foreground rounded-full text-sm font-semibold mb-6">
+              Thư Viện Dự Án
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Khám phá hình ảnh thực tế, video thi công<br />và phối cảnh 3D
+              Khám phá hình ảnh & video<br />dự án tiêu biểu
             </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              <span className="font-semibold text-primary">200+ công trình</span> · 
-              <span className="font-semibold text-primary"> 150+ video</span> · 
-              <span className="font-semibold text-primary"> 15+ năm kinh nghiệm</span>
+            <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+              <span className="font-semibold text-accent">500+ dự án hoàn thành</span> · 
+              <span className="font-semibold text-accent"> 150+ video</span> · 
+              <span className="font-semibold text-accent"> 15+ năm kinh nghiệm</span>
             </p>
           </motion.div>
         </div>
@@ -250,25 +224,25 @@ export function ProjectsGrid() {
 
       {/* Content Section */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        {/* Media Type Filter */}
+        {/* Media Type Filter - Chỉ 2 nút */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex gap-2 p-2 bg-primary/10 rounded-full">
+          <div className="flex justify-center">
+            <div className="inline-flex gap-2 p-2 bg-muted rounded-full">
               {mediaTypes.map((type) => {
                 const Icon = type.icon
                 return (
                   <button
                     key={type.id}
                     onClick={() => setActiveMediaType(type.id)}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all ${
+                    className={`flex items-center gap-2 px-8 py-3 rounded-full text-base font-semibold transition-all ${
                       activeMediaType === type.id
                         ? "bg-primary text-primary-foreground shadow-lg"
-                        : "text-slate-700 dark:text-slate-300 hover:bg-white/50 dark:hover:bg-slate-700"
+                        : "text-foreground hover:bg-background"
                     }`}
                   >
                     <Icon className="h-5 w-5" />
@@ -277,23 +251,6 @@ export function ProjectsGrid() {
                 )
               })}
             </div>
-          </div>
-
-          {/* Category Pills */}
-          <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === category.id
-                    ? "bg-accent text-accent-foreground shadow-md"
-                    : "bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-accent/10 border border-slate-200 dark:border-slate-700"
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
           </div>
         </motion.div>
 
@@ -305,10 +262,10 @@ export function ProjectsGrid() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Hình Ảnh <span className="text-primary">Công Trình Thực Tế</span>
+            {activeMediaType === "images" ? "Hình Ảnh" : "Video"} <span className="text-primary">Công Trình Thực Tế</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Những dự án tiêu biểu đã được Thiên Sơn Landscape hoàn thành
+            Những dự án tiêu biểu đã được Thiên Sơn hoàn thành
           </p>
         </motion.div>
 
@@ -372,7 +329,7 @@ export function ProjectsGrid() {
               Không tìm thấy dự án
             </h3>
             <p className="text-muted-foreground">
-              Thử thay đổi bộ lọc để xem thêm dự án khác
+              Thử chuyển sang tab khác để xem thêm dự án
             </p>
           </div>
         )}
@@ -421,7 +378,7 @@ export function ProjectsGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 p-10 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl border border-primary/10"
+          className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 p-10 bg-muted rounded-3xl"
         >
           {[
             { value: "500+", label: "Dự án hoàn thành" },
