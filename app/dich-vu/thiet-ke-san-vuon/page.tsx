@@ -7,67 +7,84 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
+import { GardenDesignIntro } from "@/components/garden-design-intro"
+import { GardenDesignBenefits } from "@/components/garden-design-benefits"
+import { GardenDesignCommitment } from "@/components/garden-design-commitment"
 
 export const metadata: Metadata = {
-  title: "Thiết Kế Sân Vườn | Sân Vườn Thiên Sơn",
+  title: "Thiết Kế Tiểu Cảnh Sân Vườn | Thiên Sơn Landscape",
   description:
-    "Dịch vụ thiết kế và thi công sân vườn biệt thự, resort cao cấp. Phong cách hiện đại, tích hợp hệ thống tưới tự động và chiếu sáng cảnh quan.",
-  keywords: ["thiết kế sân vườn", "sân vườn biệt thự", "cảnh quan sân vườn", "thi công sân vườn", "sân vườn resort"],
+    "Dịch vụ thiết kế và thi công tiểu cảnh sân vườn chuyên nghiệp. Tư vấn tận tâm, chất lượng đỉnh cao, chi phí hợp lý. Hotline: 0938 38 66 79",
+  keywords: [
+    "thiết kế sân vườn",
+    "tiểu cảnh sân vườn",
+    "thi công sân vườn",
+    "thiết kế cảnh quan",
+    "sân vườn đẹp",
+    "thiết kế tiểu cảnh",
+    "cảnh quan sân vườn",
+    "sân vườn biệt thự"
+  ],
 }
 
 const features = [
   {
-    icon: "Ruler",
-    title: "Thiết kế 3D chuyên nghiệp",
-    description: "Bản vẽ 3D chi tiết giúp khách hàng hình dung rõ ràng không gian sân vườn trước khi thi công.",
+    icon: "Heart",
+    title: "Dịch vụ Tận Tâm",
+    description: "Chúng tôi luôn lắng nghe ý kiến của khách hàng, đảm bảo tiểu cảnh sân vườn đẹp đúng ý muốn và phong cách riêng của bạn.",
   },
   {
-    icon: "TreePalm",
-    title: "Cây xanh nhập khẩu",
-    description: "Hệ thống cây xanh từ các vườn ươm uy tín, đảm bảo chất lượng và độ phát triển.",
+    icon: "Award",
+    title: "Chất Lượng Đỉnh Cao",
+    description: "Đội ngũ chuyên nghiệp và có kinh nghiệm sẽ tạo ra các tiểu cảnh độc đáo và thú vị, bằng việc sử dụng nguyên vật liệu chất lượng cao.",
   },
   {
-    icon: "Droplets",
-    title: "Hệ thống tưới tự động",
-    description: "Tích hợp hệ thống tưới nhỏ giọt, phun sương thông minh, tiết kiệm nước và công chăm sóc.",
+    icon: "Coins",
+    title: "Chi Phí Hợp Lý",
+    description: "Chúng tôi luôn nỗ lực để đảm bảo dự án thiết kế tiểu cảnh sân vườn của bạn được thực hiện với mức chi phí hợp lý và luôn cung cấp các ưu đãi.",
   },
   {
-    icon: "Lightbulb",
-    title: "Chiếu sáng cảnh quan",
-    description: "Thiết kế hệ thống đèn LED cảnh quan, tạo điểm nhấn và không gian lung linh về đêm.",
-  },
-  {
-    icon: "Sun",
-    title: "Tối ưu ánh sáng tự nhiên",
-    description: "Bố trí cây xanh và không gian nghỉ ngơi theo hướng nắng, tạo bóng mát hợp lý.",
+    icon: "Palette",
+    title: "Thiết Kế Cá Nhân Hóa",
+    description: "Có thể tạo nên không gian theo phong cách riêng, phản ánh cá tính và sở thích của gia chủ.",
   },
   {
     icon: "Leaf",
-    title: "Bảo trì định kỳ",
-    description: "Dịch vụ chăm sóc cây xanh, cắt tỉa và bảo dưỡng hệ thống định kỳ hàng tháng.",
+    title: "Không Gian Xanh Tự Nhiên",
+    description: "Kết nối con người với thiên nhiên, tạo nên môi trường sống tốt cho tâm hồn và sức khỏe.",
+  },
+  {
+    icon: "TrendingUp",
+    title: "Tăng Giá Trị Bất Động Sản",
+    description: "Một sân vườn đẹp sẽ tăng giá trị của ngôi nhà và tài sản của bạn đáng kể.",
   },
 ]
 
 const processSteps = [
   {
     number: "01",
-    title: "Khảo sát & Lắng nghe",
-    description: "Khảo sát thực địa, tìm hiểu nhu cầu và phong cách yêu thích của gia chủ.",
+    title: "Khảo sát hiện trạng của không gian sân vườn",
+    description: "Nhận cuộc gọi của khách hàng và tiến hành tư vấn, báo giá sơ bộ. Đi khảo sát, tư vấn chi tiết và thu thập những dữ liệu cần thiết cho thiết kế.",
   },
   {
     number: "02",
-    title: "Thiết kế concept",
-    description: "Đề xuất 2-3 concept thiết kế, bản vẽ 3D và dự toán chi tiết.",
+    title: "Thiết Kế",
+    description: "Chỉnh sửa, hoàn thiện không gian 3D. Lên hồ sơ thi công chi tiết và trả hồ sơ thiết kế cho khách hàng phê duyệt.",
   },
   {
     number: "03",
-    title: "Thi công & Giám sát",
-    description: "Thi công theo bản vẽ với đội ngũ giám sát chất lượng chặt chẽ.",
+    title: "Báo giá thi công sân vườn",
+    description: "Lập mục lục danh sách các loại hoa và cây sử dụng, bảng khối lượng tạm tính và bảng dự toán đính kèm chi tiết.",
   },
   {
     number: "04",
-    title: "Bàn giao & Hướng dẫn",
-    description: "Bàn giao công trình, hướng dẫn chăm sóc và chế độ bảo hành toàn diện.",
+    title: "Ký hợp đồng và triển khai thi công",
+    description: "Ký kết hợp đồng chính thức, triển khai thi công theo đúng thiết kế đã duyệt và tiến hành giám sát chất lượng.",
+  },
+  {
+    number: "05",
+    title: "Hoàn thiện và hướng dẫn kỹ thuật",
+    description: "Bàn giao công trình hoàn thiện, hướng dẫn kỹ thuật chăm sóc và bảo dưỡng sân vườn cho gia chủ.",
   },
 ]
 
@@ -117,12 +134,6 @@ const relatedServices = [
     image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
     href: "/dich-vu/hon-non-bo",
   },
-  {
-    title: "Thiết Kế Sân Vườn",
-    description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
-    image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
-    href: "/dich-vu/thiet-ke-san-vuon",
-  },
 ]
 
 export default function GardenDesignServicePage() {
@@ -131,20 +142,46 @@ export default function GardenDesignServicePage() {
       <Header />
       <main>
         <ServiceHero
-          title="Thiết Kế Sân Vườn"
-          subtitle="Kiến tạo không gian sống xanh"
-          description="Quy hoạch và thiết kế sân vườn biệt thự, resort với phong cách đa dạng từ hiện đại đến cổ điển. Tích hợp công nghệ thông minh và tối ưu công năng sử dụng."
+          title="Thiết Kế Tiểu Cảnh Sân Vườn"
+          subtitle="Nghệ thuật tạo không gian xanh"
+          description="Thiết kế tiểu cảnh sân vườn là nghệ thuật tạo ra không gian ngoại trời hài hòa và thú vị bằng cách sắp xếp cây cỏ, hoa lá, đá, nước, và các chi tiết trang trí theo cách độc đáo và sáng tạo."
           image="/luxury-villa-garden-design-with-pathway-fountain-a.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Thiết kế sân vườn" }]}
         />
-        <ServiceFeatures title="Dịch vụ toàn diện" subtitle="Giải pháp trọn gói" features={features} />
-        <ServiceProcess title="Quy trình thiết kế" subtitle="4 bước chuyên nghiệp" steps={processSteps} />
-        <ServiceGallery title="Dự án sân vườn tiêu biểu" subtitle="Công trình thực tế" images={galleryImages} />
-        <ServiceCTA
-          title="Biến không gian ngoài trời thành thiên đường riêng?"
-          description="Đội ngũ kiến trúc sư cảnh quan sẵn sàng tư vấn và thiết kế sân vườn trong mơ của bạn."
+        
+        <GardenDesignIntro />
+        
+        <GardenDesignBenefits />
+        
+        <ServiceFeatures 
+          title="Dịch vụ thiết kế tiểu cảnh sân vườn của Thiên Sơn Landscape" 
+          subtitle="Có gì đặc biệt?" 
+          features={features} 
         />
-        <RelatedServices currentService="Thiết Kế Sân Vườn" services={relatedServices} />
+        
+        <ServiceProcess 
+          title="Quy trình triển khai thiết kế thi công" 
+          subtitle="5 giai đoạn chuyên nghiệp" 
+          steps={processSteps} 
+        />
+        
+        <ServiceGallery 
+          title="Dự án tiểu cảnh sân vườn tiêu biểu" 
+          subtitle="Công trình thực tế" 
+          images={galleryImages} 
+        />
+        
+        <GardenDesignCommitment />
+        
+        <ServiceCTA
+          title="Bạn muốn sở hữu một sân vườn đẹp?"
+          description="Liên hệ ngay để được tư vấn miễn phí tận nơi và nhận báo giá chi tiết cho dự án của bạn."
+        />
+        
+        <RelatedServices 
+          currentService="Thiết Kế Sân Vườn" 
+          services={relatedServices} 
+        />
       </main>
       <Footer />
     </>
