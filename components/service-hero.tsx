@@ -53,45 +53,6 @@ export function ServiceHero({ title, subtitle, description, image, breadcrumbs }
           </div>
         </div>
       </section>
-
-      {/* Quick Contact Bar */}
-      <section className="bg-primary text-primary-foreground py-4">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-sm">
-            {/* Phone */}
-            <a
-              href="tel:0938386679"
-              className="flex items-center gap-2 hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-primary-foreground/10"
-            >
-              <Phone className="h-5 w-5 flex-shrink-0" />
-              <span className="font-semibold">0938 38 66 79</span>
-            </a>
-
-            {/* Separator */}
-            <span className="hidden sm:inline text-primary-foreground/40">|</span>
-
-            {/* Email */}
-            <a
-              href="mailto:sanvuonthienson@gmail.com"
-              className="flex items-center gap-2 hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-primary-foreground/10"
-            >
-              <Mail className="h-5 w-5 flex-shrink-0" />
-              <span className="hidden md:inline">sanvuonthienson@gmail.com</span>
-              <span className="md:hidden">Email tư vấn</span>
-            </a>
-
-            {/* Separator */}
-            <span className="hidden sm:inline text-primary-foreground/40">|</span>
-
-            {/* Working Hours */}
-            <div className="flex items-center gap-2 py-2 px-4">
-              <Clock className="h-5 w-5 flex-shrink-0" />
-              <span className="hidden md:inline">Thứ 2 - Thứ 7: 8:00 - 18:00</span>
-              <span className="md:hidden">T2-T7: 8h-18h</span>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

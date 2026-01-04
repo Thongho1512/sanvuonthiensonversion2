@@ -7,6 +7,10 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
+import { HonNonBoIntro } from "@/components/hon-non-bo-intro"
+import { HonNonBoFengShuiBenefits } from "@/components/hon-non-bo-feng-shui-benefits"
+import { HonNonBoDesignNotes } from "@/components/hon-non-bo-design-notes"
+import { HonNonBoCommitment } from "@/components/hon-non-bo-commitment"
 
 export const metadata: Metadata = {
   title: "Hòn Non Bộ & Tiểu Cảnh | Sân Vườn Thiên Sơn",
@@ -56,8 +60,8 @@ const processSteps = [
   },
   {
     number: "02",
-    title: "Thiết kế & Lựa chọn đá",
-    description: "Phác thảo thiết kế, đưa khách hàng chọn đá trực tiếp tại kho.",
+    title: "Thiết kế 3D & Lựa chọn đá",
+    description: "Phác thảo thiết kế 3D chi tiết, đưa khách hàng chọn đá trực tiếp tại kho.",
   },
   {
     number: "03",
@@ -112,12 +116,6 @@ const relatedServices = [
     href: "/dich-vu/ho-ca-koi",
   },
   {
-    title: "Hòn Non Bộ & Tiểu Cảnh",
-    description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy",
-    image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
-    href: "/dich-vu/hon-non-bo",
-  },
-  {
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
     image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
@@ -137,13 +135,26 @@ export default function RockGardenServicePage() {
           image="/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Hòn non bộ" }]}
         />
+        
+        <HonNonBoIntro />
+        
+        <HonNonBoFengShuiBenefits />
+        
+        <HonNonBoDesignNotes />
+        
         <ServiceFeatures title="Giá trị khác biệt" subtitle="Tại sao chọn chúng tôi" features={features} />
+        
         <ServiceProcess title="Quy trình tạo tác" subtitle="4 bước nghệ thuật" steps={processSteps} />
+        
         <ServiceGallery title="Tác phẩm tiêu biểu" subtitle="Bộ sưu tập" images={galleryImages} />
+        
+        <HonNonBoCommitment />
+        
         <ServiceCTA
           title="Sở hữu tác phẩm nghệ thuật độc bản?"
           description="Liên hệ ngay để được tư vấn phong thủy miễn phí và thiết kế hòn non bộ riêng cho không gian của bạn."
         />
+        
         <RelatedServices currentService="Hòn Non Bộ & Tiểu Cảnh" services={relatedServices} />
       </main>
       <Footer />
