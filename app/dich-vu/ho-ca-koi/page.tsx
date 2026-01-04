@@ -7,6 +7,13 @@ import { ServiceProcess } from "@/components/service-process"
 import { ServiceGallery } from "@/components/service-gallery"
 import { ServiceCTA } from "@/components/service-cta"
 import { RelatedServices } from "@/components/related-services"
+import { KoiPondBenefits } from "@/components/koi-pond-benefits"
+import { KoiFengShui } from "@/components/koi-feng-shui"
+import { KoiPondStandards } from "@/components/koi-pond-standards"
+import { KoiPondLocations } from "@/components/koi-pond-locations"
+import { KoiPondStructure } from "@/components/koi-pond-structure"
+import { KoiPondCommitment } from "@/components/koi-pond-commitment"
+import { KoiPondShapes } from "@/components/koi-pond-shapes"
 
 export const metadata: Metadata = {
   title: "Thi Công Hồ Cá Koi Chuẩn Nhật Bản | Thiên Sơn Landscape",
@@ -51,8 +58,8 @@ const features = [
   },
   {
     icon: "Wrench",
-    title: "Thi công bởi kỹ thuật viên chuyên nghiệp",
-    description: "Đội ngũ kỹ thuật viên có chứng chỉ chuyên môn, đào tạo bài bản về xây dựng hồ Koi, thi công theo quy trình nghiêm ngặt từng bước.",
+    title: "Thi công bởi nghệ nhân chuyên nghiệp",
+    description: "Đội ngũ nghệ nhân với hơn 15 năm kinh nghiệm, đào tạo bài bản về xây dựng hồ Koi, thi công theo quy trình nghiêm ngặt từng bước.",
   },
   {
     icon: "ShieldCheck",
@@ -70,22 +77,22 @@ const processSteps = [
   {
     number: "01",
     title: "Tư vấn & Khảo sát chi tiết",
-    description: "Đội ngũ kỹ sư khảo sát thực địa miễn phí, đo đạc chính xác, tư vấn thiết kế phù hợp với không gian, phong thủy và ngân sách của bạn.",
+    description: "Nghệ nhân trực tiếp đến tận nơi khảo sát miễn phí, đo đạc chính xác, tư vấn thiết kế phù hợp với không gian, phong thủy và ngân sách của bạn.",
   },
   {
     number: "02",
     title: "Thiết kế 3D & Báo giá minh bạch",
-    description: "Bản vẽ 3D chi tiết giúp bạn hình dung rõ công trình, lựa chọn vật liệu và trang thiết bị. Báo giá chi tiết từng hạng mục, minh bạch 100%.",
+    description: "Bản vẽ 3D chi tiết giúp bạn hình dung rõ công trình theo yêu cầu trước khi thi công, lựa chọn vật liệu và trang thiết bị. Báo giá chi tiết từng hạng mục, minh bạch 100%.",
   },
   {
     number: "03",
-    title: "Thi công chuyên nghiệp đúng tiến độ",
+    title: "Thi công chuẩn theo bản vẽ thiết kế",
     description: "Thi công theo đúng bản vẽ đã duyệt, giám sát chất lượng chặt chẽ từng công đoạn, đảm bảo tiến độ và an toàn tuyệt đối.",
   },
   {
     number: "04",
-    title: "Bàn giao & Hướng dẫn vận hành",
-    description: "Bàn giao công trình hoàn thiện, hướng dẫn chi tiết cách vận hành hệ thống lọc, chăm sóc cá và chế độ bảo hành dài hạn.",
+    title: "Lắp đặt hệ thống lọc, xử lý nước",
+    description: "Lắp đặt hệ thống lọc nước hiện đại, hướng dẫn vận hành và bàn giao công trình hoàn thiện với chế độ bảo hành dài hạn.",
   },
 ]
 
@@ -122,147 +129,6 @@ const galleryImages = [
   },
 ]
 
-const pricingTiers = [
-  {
-    name: "Gói Cơ Bản",
-    price: "3-5 triệu",
-    description: "Phù hợp cho hồ Koi nhỏ, sân vườn hẹp",
-    features: [
-      "Hồ Koi từ 10-20m²",
-      "Hệ thống lọc 2 tầng cơ bản",
-      "Máy bơm tiêu chuẩn",
-      "Chống thấm sơn Epoxy",
-      "Bảo hành 2 năm",
-      "Tư vấn thiết kế miễn phí",
-    ],
-  },
-  {
-    name: "Gói Tiêu Chuẩn",
-    price: "5-8 triệu",
-    description: "Lựa chọn tốt nhất cho gia đình",
-    features: [
-      "Hồ Koi từ 20-50m²",
-      "Hệ thống lọc 3 tầng + UV",
-      "Máy bơm tiết kiệm điện",
-      "Chống thấm màng HDPE",
-      "Hệ thống sục khí tự động",
-      "Đèn LED dưới nước",
-      "Bảo hành 3 năm",
-      "Tư vấn phong thủy miễn phí",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Gói Cao Cấp",
-    price: "8-15 triệu",
-    description: "Hồ Koi đẳng cấp, biệt thự sang trọng",
-    features: [
-      "Hồ Koi từ 50m² trở lên",
-      "Hệ thống lọc 4 tầng cao cấp",
-      "Máy bơm biến tần Nhật Bản",
-      "Chống thấm đa lớp",
-      "Hệ thống điều hòa nhiệt độ",
-      "Đèn LED RGB điều khiển từ xa",
-      "Thác nước nghệ thuật",
-      "Cầu gỗ, đá tự nhiên cao cấp",
-      "Bảo hành 5 năm",
-      "Bảo trì miễn phí 1 năm",
-    ],
-  },
-]
-
-const koiFAQs = [
-  {
-    question: "Thi công hồ cá Koi mất bao lâu?",
-    answer: `Thời gian thi công phụ thuộc vào quy mô:
-
-- Hồ nhỏ (10-20m²): 1-2 tuần
-- Hồ trung bình (20-50m²): 2-4 tuần  
-- Hồ lớn (trên 50m²): 4-8 tuần
-
-Thời gian có thể kéo dài hơn nếu có yêu cầu đặc biệt về thiết kế hoặc cảnh quan phức tạp.`,
-  },
-  {
-    question: "Chi phí thi công hồ cá Koi bao nhiêu?",
-    answer: `Chi phí dao động từ 3-15 triệu/m² tùy thuộc:
-
-- Kích thước hồ
-- Chất liệu chống thấm (Epoxy hay màng HDPE)
-- Hệ thống lọc (2 tầng, 3 tầng hay 4 tầng)
-- Thiết bị phụ trợ (đèn, thác nước, sục khí)
-- Cảnh quan xung quanh
-
-Liên hệ 0938 38 66 79 để nhận báo giá chi tiết miễn phí.`,
-  },
-  {
-    question: "Hồ cá Koi có cần thay nước thường xuyên không?",
-    answer: `Với hệ thống lọc hiện đại, bạn KHÔNG cần thay nước thường xuyên:
-
-- Hệ thống lọc hoạt động 24/7 tự động làm sạch nước
-- Chỉ cần bổ sung nước do bay hơi (khoảng 5-10% mỗi tuần)
-- Thay nước lớn 6 tháng/lần hoặc 1 năm/lần tùy chất lượng
-
-Điều quan trọng là vệ sinh bộ lọc định kỳ theo hướng dẫn.`,
-  },
-  {
-    question: "Hồ Koi có phù hợp với khí hậu Việt Nam không?",
-    answer: `Hoàn toàn phù hợp! Chúng tôi thiết kế hồ Koi chuyên biệt cho khí hậu nhiệt đới:
-
-- Hệ thống che nắng tránh nước nóng quá mức
-- Máy sục khí đủ oxy khi trời nóng
-- Độ sâu hồ phù hợp (tối thiểu 1.2m)
-- Cây xanh tạo bóng mát tự nhiên
-
-Cá Koi thích hợp với nhiệt độ 15-28°C, hoàn toàn phù hợp khí hậu Việt Nam.`,
-  },
-  {
-    question: "Bảo hành và bảo trì như thế nào?",
-    answer: `Chế độ bảo hành và bảo trì toàn diện:
-
-BẢO HÀNH:
-- Kết cấu hồ: 5 năm
-- Hệ thống lọc: 3 năm
-- Máy bơm, thiết bị: 1-2 năm (theo nhà sản xuất)
-
-BẢO TRÌ:
-- Hướng dẫn vận hành chi tiết khi bàn giao
-- Hỗ trợ kỹ thuật qua điện thoại miễn phí
-- Dịch vụ bảo trì định kỳ với giá ưu đãi
-- Cung cấp phụ tùng chính hãng`,
-  },
-  {
-    question: "Hồ Koi cần diện tích tối thiểu bao nhiêu?",
-    answer: `Diện tích hồ Koi phụ thuộc vào số lượng và kích thước cá:
-
-- Hồ mini (10-15m²): Nuôi 5-8 con cá nhỏ
-- Hồ trung bình (20-40m²): Nuôi 10-15 con
-- Hồ lớn (50m² trở lên): Nuôi 20+ con
-
-Nguyên tắc: 1 con cá Koi trưởng thành cần khoảng 1.5-2m³ nước để phát triển khỏe mạnh. Độ sâu tối thiểu 1.2m, lý tưởng là 1.5-2m.`,
-  },
-  {
-    question: "Có cần giấy phép để xây hồ cá Koi không?",
-    answer: `Tùy thuộc vào quy mô và vị trí:
-
-- Hồ trong sân nhà riêng: Thường không cần giấy phép
-- Hồ lớn thay đổi kết cấu: Có thể cần báo cáo với chính quyền địa phương
-- Hồ ở chung cư, chung cư: Cần xin phép ban quản lý
-
-Chúng tôi sẽ tư vấn chi tiết về các thủ tục cần thiết và hỗ trợ làm hồ sơ nếu cần.`,
-  },
-  {
-    question: "Làm hồ Koi có ồn không?",
-    answer: `Hệ thống hồ Koi hiện đại rất yên tĩnh:
-
-- Máy bơm chất lượng cao hoạt động êm ái
-- Hệ thống lọc được thiết kế giảm âm
-- Tiếng nước chảy nhẹ nhàng, thư giãn (nếu có thác)
-- Không gây ồn ảo cho gia đình và hàng xóm
-
-Nhiều khách hàng phản hồi tiếng nước chảy nhẹ còn giúp họ thư giãn và ngủ ngon hơn.`,
-  },
-]
-
 const relatedServices = [
   {
     title: "Hòn Non Bộ & Tiểu Cảnh",
@@ -290,14 +156,48 @@ export default function KoiPondServicePage() {
           image="/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Hồ cá Koi" }]}
         />
-        <ServiceFeatures title="Tại sao chọn dịch vụ của chúng tôi" subtitle="Ưu điểm vượt trội" features={features} />
-        <ServiceProcess title="Quy trình thi công" subtitle="4 bước chuyên nghiệp" steps={processSteps} />
-        <ServiceGallery title="Dự án hồ Koi tiêu biểu" subtitle="Công trình thực tế" images={galleryImages} />
+        
+        <KoiPondBenefits />
+        
+        <KoiFengShui />
+        
+        <ServiceFeatures 
+          title="Tại sao chọn dịch vụ của chúng tôi" 
+          subtitle="Ưu điểm vượt trội" 
+          features={features} 
+        />
+        
+        <ServiceProcess 
+          title="Quy trình thi công" 
+          subtitle="4 bước chuyên nghiệp" 
+          steps={processSteps} 
+        />
+        
+        <KoiPondStandards />
+
+        <KoiPondShapes />
+        
+        <KoiPondLocations />
+        
+        <KoiPondStructure />
+        
+        <ServiceGallery 
+          title="Dự án hồ Koi tiêu biểu" 
+          subtitle="Công trình thực tế" 
+          images={galleryImages} 
+        />
+        
+        <KoiPondCommitment />
+        
         <ServiceCTA
           title="Bạn muốn sở hữu một hồ cá Koi đẳng cấp?"
-          description="Liên hệ ngay để được tư vấn miễn phí và nhận báo giá chi tiết cho dự án của bạn."
+          description="Liên hệ ngay để được nghệ nhân tư vấn miễn phí tận nơi và nhận báo giá chi tiết cho dự án của bạn."
         />
-        <RelatedServices currentService="Thi Công Hồ Cá Koi" services={relatedServices} />
+        
+        <RelatedServices 
+          currentService="Thi Công Hồ Cá Koi" 
+          services={relatedServices} 
+        />
       </main>
       <Footer />
     </>

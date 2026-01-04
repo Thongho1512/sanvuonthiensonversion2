@@ -7,7 +7,7 @@ const team = [
     name: "Nguyễn Văn Thiên",
     role: "Founder & CEO",
     image: "/team-ceo.jpg",
-    description: "Hơn 20 năm kinh nghiệm trong ngành cảnh quan",
+    description: "Hơn 15 năm kinh nghiệm trong ngành cảnh quan",
   },
   {
     name: "Trần Thị Hương",

@@ -16,7 +16,7 @@ const services = [
   {
     number: "02",
     title: "Hòn Non Bộ & Tiểu Cảnh",
-    description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy với đá tự nhiên cao cấp và nghệ nhân lành nghề hơn 20 năm kinh nghiệm.",
+    description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy với đá tự nhiên cao cấp và nghệ nhân lành nghề hơn 15 năm kinh nghiệm.",
     image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
     href: "/dich-vu/hon-non-bo",
     features: ["Tư vấn phong thủy", "Đá tự nhiên cao cấp", "Thiết kế độc quyền"]

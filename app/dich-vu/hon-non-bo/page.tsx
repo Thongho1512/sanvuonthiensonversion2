@@ -29,7 +29,7 @@ const features = [
   {
     icon: "Mountain",
     title: "Nghệ nhân lành nghề",
-    description: "Đội ngũ nghệ nhân với hơn 20 năm kinh nghiệm tạo tác hòn non bộ truyền thống.",
+    description: "Đội ngũ nghệ nhân với hơn 15 năm kinh nghiệm tạo tác hòn non bộ truyền thống.",
   },
   {
     icon: "Palette",
