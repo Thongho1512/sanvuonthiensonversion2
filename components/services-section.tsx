@@ -8,22 +8,23 @@ const services = [
   {
     number: "01",
     title: "Thi công Hồ cá Koi",
-    description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản, đảm bảo môi trường sống lý tưởng cho cá.",
-    image: "/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg",
+    description: "Thiết kế và thi công hồ cá Koi đẹp, độc đáo, đảm bảo môi trường sống lý tưởng cho cá.",
+    // Hình ảnh thực tế đẹp hơn placeholder
+    image: "https://images.squarespace-cdn.com/content/v1/57843c49440243c511147fed/1596575842029-Q7Q3PEBW54PCPBL1UZU4/Koi+by+Aurora+Santiago.jpg",
     href: "/dich-vu/ho-ca-koi",
   },
   {
     number: "02",
     title: "Hòn non bộ & Tiểu cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật mang vẻ đẹp thiên nhiên thu nhỏ vào không gian sống.",
-    image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
+    image: "https://i.pinimg.com/736x/f7/e8/a8/f7e8a811c12ee6a1268eb6181b211fa6.jpg",
     href: "/dich-vu/hon-non-bo",
   },
   {
     number: "03",
     title: "Thiết kế Sân vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort với phong cách hiện đại kết hợp thiên nhiên.",
-    image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
+    image: "https://antonovich-design.ae/uploads/post/2024/9/antonovich-design-2024vAZAtsV6UiBI.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]
@@ -40,8 +41,12 @@ export function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 lg:mb-24"
         >
-          <span className="text-sm tracking-widest uppercase text-accent">Dịch vụ của chúng tôi</span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight text-balance">
+          <span className="text-2xl lg:text-3xl tracking-widest uppercase text-accent font-medium">
+            Dịch vụ của chúng tôi
+          </span>
+
+          {/* Tiêu đề chính nhỏ lại để cân bằng */}
+          <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight text-balance">
             Giải pháp toàn diện cho
             <br />
             không gian xanh của bạn
@@ -74,19 +79,22 @@ export function ServicesSection() {
                       />
                     </div>
                     <div className="absolute top-6 left-6">
-                      <span className="text-6xl lg:text-8xl font-semibold text-card/20">{service.number}</span>
+                      {/* Tăng độ tương phản cho số thứ tự */}
+                      <span className="text-6xl lg:text-8xl font-semibold text-foreground/30">{service.number}</span>
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                    {/* Tăng cỡ chữ tiêu đề */}
+                    <h3 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
-                    <p className="mt-4 text-lg text-muted-foreground leading-relaxed">{service.description}</p>
-                    <div className="mt-8 flex items-center gap-2 text-primary font-medium">
+                    {/* Tăng cỡ chữ và độ đậm cho mô tả */}
+                    <p className="mt-6 text-xl text-foreground/90 leading-relaxed">{service.description}</p>
+                    <div className="mt-10 flex items-center gap-3 text-lg font-semibold text-primary">
                       <span>Tìm hiểu thêm</span>
-                      <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                      <ArrowUpRight className="h-6 w-6 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2" />
                     </div>
                   </div>
                 </div>

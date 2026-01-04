@@ -8,7 +8,7 @@ const milestones = [
   { year: "2015", title: "100 dự án", description: "Cột mốc 100 công trình hoàn thành" },
   { year: "2018", title: "Chứng nhận ISO", description: "Đạt chứng nhận ISO 9001:2015" },
   { year: "2020", title: "Đối tác Nhật Bản", description: "Hợp tác với chuyên gia Koi Nhật" },
-  { year: "2024", title: "500+ dự án", description: "Phục vụ khách hàng toàn quốc" },
+  { year: "2024", title: "50+ dự án", description: "Phục vụ khách hàng toàn quốc" },
 ]
 
 export function AboutStory() {

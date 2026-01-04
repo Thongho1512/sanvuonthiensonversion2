@@ -83,7 +83,7 @@ export function CTASection() {
           >
             {[
               { value: "15+", label: "Năm kinh nghiệm" },
-              { value: "500+", label: "Dự án hoàn thành" },
+              { value: "50+", label: "Dự án hoàn thành" },
               { value: "100%", label: "Khách hài lòng" },
               { value: "24/7", label: "Hỗ trợ tư vấn" },
             ].map((stat, index) => (

@@ -120,7 +120,7 @@ export function ServicesOverview() {
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 p-8 lg:p-12 bg-muted rounded-2xl"
         >
           {[
-            { value: "500+", label: "Dự án hoàn thành" },
+            { value: "50+", label: "Dự án hoàn thành" },
             { value: "15+", label: "Năm kinh nghiệm" },
             { value: "100%", label: "Khách hài lòng" },
             { value: "50+", label: "Đội ngũ chuyên gia" },

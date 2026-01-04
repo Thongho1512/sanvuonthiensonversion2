@@ -42,7 +42,7 @@ export default function ProjectsHero() {
           </p>
           
           <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-gray-400 mb-12">
-            <span>500+ dự án hoàn thành</span>
+            <span>50+ dự án hoàn thành</span>
             <span className="w-1 h-1 rounded-full bg-gray-600" />
             <span>150+ video</span>
             <span className="w-1 h-1 rounded-full bg-gray-600" />

@@ -10,21 +10,15 @@ const testimonials = [
     quote:
       "Thiên Sơn đã biến giấc mơ về một sân vườn Nhật Bản thành hiện thực. Hồ cá Koi của tôi giờ là niềm tự hào của cả gia đình.",
     author: "Anh Minh Đức",
-    role: "Chủ biệt thự Vinhomes",
-    image: "/vietnamese-businessman-portrait-professional-heads.jpg",
   },
   {
     quote:
       "Đội ngũ chuyên nghiệp, tận tâm và sáng tạo. Tiểu cảnh hòn non bộ của chúng tôi nhận được rất nhiều lời khen từ khách đến thăm.",
     author: "Chị Thu Hằng",
-    role: "Chủ resort Phú Quốc",
-    image: "/vietnamese-businesswoman-portrait-professional-hea.jpg",
   },
   {
     quote: "Từ thiết kế đến thi công đều rất chỉn chu. Bảo hành và chăm sóc sau bán hàng xuất sắc. Rất đáng để đầu tư!",
     author: "Anh Quang Huy",
-    role: "Chủ nhà phố Quận 7",
-    image: "/vietnamese-man-portrait-casual-headshot.jpg",
   },
 ]
 
@@ -37,19 +31,21 @@ export function Testimonials() {
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-16 lg:mb-20"
         >
           <span className="text-sm tracking-widest uppercase text-accent">Khách hàng nói gì</span>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight">
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight text-balance">
             Phản hồi từ khách hàng
           </h2>
         </motion.div>
 
+        {/* Testimonial Slider */}
         <div className="relative max-w-4xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
@@ -60,48 +56,54 @@ export function Testimonials() {
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <Quote className="mx-auto h-12 w-12 text-accent/30" />
-              <blockquote className="mt-8 text-xl sm:text-2xl lg:text-3xl font-medium text-foreground leading-relaxed">
+              {/* Quote Icon */}
+              <Quote className="mx-auto h-16 w-16 text-accent/30 mb-8" />
+
+              {/* Quote Text */}
+              <blockquote className="mt-8 text-xl sm:text-2xl lg:text-3xl font-medium text-foreground leading-relaxed px-4">
                 &ldquo;{testimonials[current].quote}&rdquo;
               </blockquote>
-              <div className="mt-10 flex flex-col items-center gap-4">
-                <img
-                  src={testimonials[current].image || "/placeholder.svg"}
-                  alt={testimonials[current].author}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-foreground">{testimonials[current].author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonials[current].role}</p>
-                </div>
+
+              {/* Author - Không còn ảnh */}
+              <div className="mt-12">
+                <p className="text-xl lg:text-2xl font-semibold text-foreground">
+                  {testimonials[current].author}
+                </p>
+                {/* Nếu sau này muốn thêm chức vụ, có thể mở lại dòng dưới */}
+                {/* <p className="text-sm text-muted-foreground mt-1">Chủ biệt thự tại Hà Nội</p> */}
               </div>
             </motion.div>
           </AnimatePresence>
 
-          {/* Navigation */}
-          <div className="mt-12 flex justify-center gap-4">
+          {/* Navigation Buttons & Dots */}
+          <div className="mt-16 flex justify-center items-center gap-6">
             <Button
               variant="outline"
               size="icon"
               onClick={prev}
-              className="border-border hover:bg-muted bg-transparent"
+              className="border-border hover:bg-muted bg-transparent rounded-full"
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
-            <div className="flex items-center gap-2">
+
+            <div className="flex items-center gap-3">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrent(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${index === current ? "bg-primary" : "bg-border"}`}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === current ? "bg-primary w-8" : "bg-border"
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
             </div>
+
             <Button
               variant="outline"
               size="icon"
               onClick={next}
-              className="border-border hover:bg-muted bg-transparent"
+              className="border-border hover:bg-muted bg-transparent rounded-full"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>

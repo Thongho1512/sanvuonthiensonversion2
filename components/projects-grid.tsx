@@ -214,7 +214,7 @@ export function ProjectsGrid() {
               Khám phá hình ảnh & video<br />dự án tiêu biểu
             </h1>
             <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-              <span className="font-semibold text-accent">500+ dự án hoàn thành</span> · 
+              <span className="font-semibold text-accent">50+ dự án hoàn thành</span> · 
               <span className="font-semibold text-accent"> 150+ video</span> · 
               <span className="font-semibold text-accent"> 15+ năm kinh nghiệm</span>
             </p>
@@ -381,7 +381,7 @@ export function ProjectsGrid() {
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 p-10 bg-muted rounded-3xl"
         >
           {[
-            { value: "500+", label: "Dự án hoàn thành" },
+            { value: "50+", label: "Dự án hoàn thành" },
             { value: "63", label: "Tỉnh thành" },
             { value: "15+", label: "Năm kinh nghiệm" },
             { value: "100%", label: "Khách hài lòng" },

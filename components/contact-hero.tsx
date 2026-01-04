@@ -98,7 +98,7 @@ export function ContactHero() {
         <div className="relative">
           <div className="w-32 h-32 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary">500+</p>
+              <p className="text-3xl font-bold text-primary">50+</p>
               <p className="text-xs text-muted-foreground">Dự án hoàn thành</p>
             </div>
           </div>
