@@ -55,7 +55,7 @@ export function CTASection() {
               >
                 <a href="tel:0938386679">
                   <Phone className="mr-2 h-5 w-5" />
-                  0938 38 66 79
+                  0907 99 77 59
                 </a>
               </Button>
 

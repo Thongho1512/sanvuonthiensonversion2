@@ -8,7 +8,7 @@ export function FloatingContact() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Zalo Button */}
       <motion.a
-        href="https://zalo.me/0901234567"
+        href="https://zalo.me/0907997759"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#0068FF] text-white shadow-lg transition-all hover:scale-110 hover:shadow-xl"

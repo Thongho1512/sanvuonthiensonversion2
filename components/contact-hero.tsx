@@ -71,7 +71,7 @@ export function ContactHero() {
               </div>
               <div className="text-left">
                 <p className="text-sm text-white/90 font-medium">Gọi ngay</p>
-                <p className="font-bold text-lg">0938 38 66 79</p>
+                <p className="font-bold text-lg">0907 99 77 59</p>
               </div>
             </Link>
 

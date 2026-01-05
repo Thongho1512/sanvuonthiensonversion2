@@ -4,22 +4,37 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
-export function RelatedServices() {
-  // Chỉ hiển thị đúng 2 dịch vụ cụ thể - bạn có thể dễ dàng thay đổi ảnh, link, nội dung
-  const relatedServices = [
+interface Service {
+  title: string
+  description: string
+  image: string
+  href: string
+}
+
+interface RelatedServicesProps {
+  currentService?: string
+  services?: Service[]
+}
+
+export function RelatedServices({ currentService, services: propServices }: RelatedServicesProps) {
+  // Default services nếu không được truyền vào
+  const defaultServices = [
     {
       title: "Hòn Non Bộ & Tiểu Cảnh",
       description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy, mang lại sự hài hòa và vượng khí cho không gian sống.",
-      image: "/43.jpg", // Thay bằng ảnh đẹp của bạn
+      image: "/43.jpg",
       href: "/dich-vu/hon-non-bo",
     },
     {
       title: "Hồ Cá Koi",
       description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản, đảm bảo môi trường sống lý tưởng cho cá với hệ thống lọc nước hiện đại.",
-      image: "/44.jpg", // Thay bằng ảnh đẹp của bạn
+      image: "/44.jpg",
       href: "/dich-vu/ho-ca-koi",
     },
   ]
+
+  // Sử dụng services được truyền vào hoặc default services
+  const relatedServices = propServices || defaultServices
 
   return (
     <section className="py-20 lg:py-28 bg-background">
@@ -36,7 +51,7 @@ export function RelatedServices() {
             Dịch vụ liên quan
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight">
-            Khám phá thêm dịch vụ khác
+            {currentService ? `Khám phá thêm ngoài ${currentService}` : "Khám phá thêm dịch vụ khác"}
           </h2>
         </motion.div>
 

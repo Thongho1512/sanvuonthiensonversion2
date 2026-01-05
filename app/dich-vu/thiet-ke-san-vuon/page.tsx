@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Thiết Kế Tiểu Cảnh Sân Vườn | Thiên Sơn Landscape",
   description:
-    "Dịch vụ thiết kế và thi công tiểu cảnh sân vườn chuyên nghiệp. Tư vấn tận tâm, chất lượng đỉnh cao, chi phí hợp lý. Hotline: 0938 38 66 79",
+    "Dịch vụ thiết kế và thi công tiểu cảnh sân vườn chuyên nghiệp. Tư vấn tận tâm, chất lượng đỉnh cao, chi phí hợp lý. Hotline: 0907 99 77 59",
   keywords: [
     "thiết kế sân vườn",
     "tiểu cảnh sân vườn",
@@ -101,13 +101,13 @@ const relatedServices = [
   {
     title: "Thi Công Hồ Cá Koi",
     description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản",
-    image: "/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg",
+    image: "/15.jpg",
     href: "/dich-vu/ho-ca-koi",
   },
   {
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy",
-    image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
+    image: "/43.jpg",
     href: "/dich-vu/hon-non-bo",
   },
 ];

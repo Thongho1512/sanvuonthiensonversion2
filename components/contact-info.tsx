@@ -8,7 +8,7 @@ const offices = [
   {
     city: "TP. Hồ Chí Minh",
     address: "178/19/33 Trương Thị Hoa, P.Tân Thới Hiệp, Q12",
-    phone: "0938 38 66 79",
+    phone: "0907 99 77 59",
     email: "sanvuonthienson@gmail.com",
     hours: "8:00 - 18:00",
     mapUrl: "https://maps.google.com/?q=10.863,106.646",
@@ -17,7 +17,7 @@ const offices = [
   {
     city: "Chi nhánh Bà Rịa - Vũng Tàu",
     address: "315 Hùng Vương, TT Ngãi Giao, Châu Đức – BR-VT",
-    phone: "0938 38 66 79",
+    phone: "0907 99 77 59",
     email: "sanvuonthienson@gmail.com",
     hours: "8:00 - 18:00",
     mapUrl: "https://maps.google.com/?q=315+Hung+Vuong+Ngai+Giao+Chau+Duc+Ba+Ria+Vung+Tau",

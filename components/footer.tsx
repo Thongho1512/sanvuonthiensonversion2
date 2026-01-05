@@ -47,7 +47,7 @@ export function Footer() {
                   href="tel:0938386679"
                   className="text-white hover:text-emerald-400 transition-colors text-base lg:text-lg font-bold"
                 >
-                  0938 38 66 79
+                  0907 99 77 59
                 </a>
               </div>
             </div>

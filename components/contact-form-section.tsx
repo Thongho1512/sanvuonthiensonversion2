@@ -13,7 +13,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Gọi điện thoại",
-    value: "0938 38 66 79",
+    value: "0907 99 77 59",
     href: "tel:0938386679",
     description: "Hotline tư vấn 24/7",
     color: "text-green-500",
@@ -22,8 +22,8 @@ const contactMethods = [
   {
     icon: MessageCircle,
     title: "Chat Zalo",
-    value: "0938 38 66 79",
-    href: "https://zalo.me/0938386679",
+    value: "0907 99 77 59",
+    href: "https://zalo.me/0907997759",
     description: "Phản hồi nhanh trong 5 phút",
     color: "text-blue-500",
     bgColor: "bg-blue-500/10",

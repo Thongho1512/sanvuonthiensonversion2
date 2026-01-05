@@ -18,7 +18,7 @@ import { KoiPondShapes } from "@/components/koi-pond-shapes"
 export const metadata: Metadata = {
   title: "Thi Công Hồ Cá Koi Chuẩn Nhật Bản | Thiên Sơn Landscape",
   description:
-    "Chuyên thiết kế thi công hồ cá Koi đẹp theo tiêu chuẩn Nhật Bản. Hệ thống lọc hiện đại, bảo hành 10 năm. Tư vấn miễn phí 24/7. Hotline: 0938 38 66 79",
+    "Chuyên thiết kế thi công hồ cá Koi đẹp theo tiêu chuẩn Nhật Bản. Hệ thống lọc hiện đại, bảo hành 10 năm. Tư vấn miễn phí 24/7. Hotline: 0907 99 77 59",
   keywords: [
     "hồ cá koi",
     "thi công hồ koi",
