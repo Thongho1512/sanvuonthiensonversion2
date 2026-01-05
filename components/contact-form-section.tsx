@@ -3,6 +3,10 @@
 import { motion } from "framer-motion"
 import { Phone, Mail, MessageCircle, MapPin, Clock, CheckCircle2, Shield, Sparkles } from "lucide-react"
 
+const ZaloIcon = ({ className }: { className?: string }) => (
+  <img src="/zalo-logo.png" alt="Zalo" className={className} />
+)
+
 const benefits = [
   { icon: CheckCircle2, text: "Tư vấn miễn phí tại nhà" },
   { icon: Shield, text: "Bảo hành công trình 5 năm" },
@@ -20,7 +24,7 @@ const contactMethods = [
     bgColor: "bg-green-500/10",
   },
   {
-    icon: MessageCircle,
+    icon: ZaloIcon,
     title: "Chat Zalo",
     value: "0907 99 77 59",
     href: "https://zalo.me/0907997759",

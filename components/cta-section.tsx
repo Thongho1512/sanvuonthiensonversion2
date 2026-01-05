@@ -66,7 +66,7 @@ export function CTASection() {
                 className="border-card/30 text-card hover:bg-card/10 text-base bg-transparent h-14 px-8"
               >
                 <a href="https://zalo.me/0907997759" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" />
+                  <img src="/zalo-logo.png" alt="Zalo" className="mr-2 h-5 w-5" />
                   Chat Zalo
                 </a>
               </Button>

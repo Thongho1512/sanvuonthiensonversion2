@@ -4,7 +4,6 @@ import { Footer } from "@/components/footer"
 import { ContactHero } from "@/components/contact-hero"
 import { ContactFormSection } from "@/components/contact-form-section"
 import { ContactInfo } from "@/components/contact-info"
-import { ContactFAQ } from "@/components/contact-faq"
 
 export const metadata: Metadata = {
   title: "Liên Hệ | Sân Vườn Thiên Sơn",
@@ -21,7 +20,6 @@ export default function ContactPage() {
         <ContactHero />
         <ContactFormSection />
         <ContactInfo />
-        <ContactFAQ />
       </main>
       <Footer />
     </>

@@ -81,7 +81,7 @@ export function ContactHero() {
               className="group flex items-center gap-3 px-6 py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl hover:bg-gray-700/70 hover:border-blue-400/60 transition-all shadow-xl"
             >
               <div className="w-10 h-10 rounded-full bg-blue-500/30 flex items-center justify-center border border-blue-400/40">
-                <MessageCircle className="h-5 w-5 text-blue-300" />
+                <img src="/zalo-logo.png" alt="Zalo" className="h-6 w-6" />
               </div>
               <div className="text-left">
                 <p className="text-sm text-gray-200 font-medium">Chat Zalo</p>

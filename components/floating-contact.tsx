@@ -18,7 +18,7 @@ export function FloatingContact() {
         whileHover={{ rotate: [0, -10, 10, -10, 0] }}
         aria-label="Nhắn tin Zalo"
       >
-        <MessageCircle className="h-6 w-6" />
+        <img src="/zalo-logo.png" alt="Zalo" className="h-7 w-7" />
 
         <span className="absolute right-full mr-3 whitespace-nowrap rounded-lg bg-foreground px-3 py-2 text-sm font-medium text-background opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
           Chat Zalo
