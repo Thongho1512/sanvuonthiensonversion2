@@ -36,9 +36,9 @@ export function ServiceCTA({ title, description }: ServiceCTAProps) {
               variant="outline"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
             >
-              <a href="tel:0901234567">
+              <a href="tel:0907997759">
                 <Phone className="mr-2 h-5 w-5" />
-                090 123 4567
+                090 799 77 59
               </a>
             </Button>
           </div>

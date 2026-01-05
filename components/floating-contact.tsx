@@ -30,7 +30,7 @@ export function FloatingContact() {
 
       {/* Phone Button */}
       <motion.a
-        href="tel:0901234567"
+        href="tel:0907997759"
         className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-110 hover:shadow-xl"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

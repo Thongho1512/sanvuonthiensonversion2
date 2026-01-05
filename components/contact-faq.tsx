@@ -110,8 +110,8 @@ export function ContactFAQ() {
           <p className="text-foreground font-medium">Còn thắc mắc khác?</p>
           <p className="mt-2 text-muted-foreground">
             Liên hệ trực tiếp hotline{" "}
-            <a href="tel:0901234567" className="text-primary font-semibold hover:underline">
-              090 123 4567
+            <a href="tel:0907997759" className="text-primary font-semibold hover:underline">
+              090 799 77 59
             </a>{" "}
             để được giải đáp ngay.
           </p>

@@ -174,10 +174,10 @@ export function Header() {
             <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 border border-white/50">
               <p className="text-sm font-semibold text-foreground mb-2">Liên hệ tư vấn</p>
               <a 
-                href="tel:0901234567" 
+                href="tel:0907997759" 
                 className="text-primary font-bold text-lg hover:text-primary/80 transition-colors"
               >
-                090 123 4567
+                090 799 77 59
               </a>
             </div>
           </div>
