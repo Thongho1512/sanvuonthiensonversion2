@@ -112,7 +112,7 @@ export function CTASection() {
             <p className="text-card/90 text-sm">
               <span className="font-semibold">Phản hồi nhanh trong 2 giờ</span> · 
               Tư vấn miễn phí tại nhà · 
-              Bảo hành 5 năm
+              Bảo hành 10 năm
             </p>
           </motion.div>
         </div>

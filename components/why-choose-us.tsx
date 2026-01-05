@@ -12,7 +12,7 @@ const features = [
   {
     icon: "Users",
     title: "Đội ngũ chuyên nghiệp",
-    description: "Hơn 50 kỹ sư và nghệ nhân với nhiều năm kinh nghiệm trong ngành.",
+    description: "Nghệ nhân Lê Anh với nhiều năm kinh nghiệm trong ngành.",
   },
   {
     icon: "Clock",
@@ -22,7 +22,7 @@ const features = [
   {
     icon: "Shield",
     title: "Bảo hành dài hạn",
-    description: "Chế độ bảo hành lên đến 5 năm và hỗ trợ bảo trì trọn đời.",
+    description: "Chế độ bảo hành lên đến 10 năm và hỗ trợ bảo trì trọn đời.",
   },
 ]
 
@@ -104,7 +104,7 @@ export function WhyChooseUs() {
           >
             <div className="aspect-[4/5] lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/professional-landscaper-working-on-koi-pond-constr.jpg"
+                src="/15.jpg"
                 alt="Đội ngũ thi công chuyên nghiệp tại Thiên Sơn Landscape"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />

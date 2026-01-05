@@ -7,7 +7,7 @@ const locations = [
   {
     icon: Home,
     title: "Hồ cá Koi trong nhà",
-    image: "/indoor-koi-pond-lobby-design.jpg",
+    image: "/31.jpg",
     features: [
       "Kiểm soát nhiệt độ dễ dàng",
       "Bảo vệ cá khỏi thời tiết",
@@ -18,7 +18,7 @@ const locations = [
   {
     icon: Trees,
     title: "Hồ cá Koi trong sân vườn",
-    image: "/natural-koi-pond-with-rocks-and-waterfall.jpg",
+    image: "/10.jpg",
     features: [
       "Kết hợp cảnh quan tự nhiên",
       "Không gian rộng rãi cho cá",
@@ -29,7 +29,7 @@ const locations = [
   {
     icon: Sun,
     title: "Hồ cá Koi ngoài trời",
-    image: "/koi-pond-luxury-villa-night-lighting-waterfall.jpg",
+    image: "/23.jpg",
     features: [
       "Chi phí hợp lý",
       "Môi trường tự nhiên",
@@ -40,7 +40,7 @@ const locations = [
   {
     icon: Building2,
     title: "Hồ cá Koi sân thượng",
-    image: "/project-rooftop-koi-landmark.jpg",
+    image: "/36.jpg",
     features: [
       "Tận dụng không gian trống",
       "View đẹp, thoáng mát",

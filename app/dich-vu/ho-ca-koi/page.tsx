@@ -18,7 +18,7 @@ import { KoiPondShapes } from "@/components/koi-pond-shapes"
 export const metadata: Metadata = {
   title: "Thi Công Hồ Cá Koi Chuẩn Nhật Bản | Thiên Sơn Landscape",
   description:
-    "Chuyên thiết kế thi công hồ cá Koi đẹp theo tiêu chuẩn Nhật Bản. Hệ thống lọc hiện đại, bảo hành 5 năm. Tư vấn miễn phí 24/7. Hotline: 0938 38 66 79",
+    "Chuyên thiết kế thi công hồ cá Koi đẹp theo tiêu chuẩn Nhật Bản. Hệ thống lọc hiện đại, bảo hành 10 năm. Tư vấn miễn phí 24/7. Hotline: 0938 38 66 79",
   keywords: [
     "hồ cá koi",
     "thi công hồ koi",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Thi Công Hồ Cá Koi Chuẩn Nhật Bản | Thiên Sơn",
-    description: "Chuyên thiết kế thi công hồ cá Koi đẹp. Hệ thống lọc hiện đại, bảo hành 5 năm",
+    description: "Chuyên thiết kế thi công hồ cá Koi đẹp. Hệ thống lọc hiện đại, bảo hành 10 năm",
     images: ["/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg"],
   },
 }
@@ -62,70 +62,56 @@ const features = [
     description: "Đội ngũ nghệ nhân với hơn 15 năm kinh nghiệm, đào tạo bài bản về xây dựng hồ Koi, thi công theo quy trình nghiêm ngặt từng bước.",
   },
   {
-    icon: "ShieldCheck",
-    title: "Chống thấm tuyệt đối - Bảo hành 5 năm",
-    description: "Sử dụng màng chống thấm HDPE cao cấp nhập khẩu hoặc sơn Epoxy chuyên dụng, đảm bảo không rò rỉ, nứt vỡ. Bảo hành kết cấu 5 năm.",
-  },
-  {
     icon: "Trees",
     title: "Thiết kế cảnh quan tích hợp hài hòa",
     description: "Kết hợp hồ Koi với sân vườn, thác nước, đá non bộ, ánh sáng cảnh quan tạo nên không gian thư giãn hoàn hảo, tăng giá trị bất động sản.",
   },
 ]
 
+// === QUY TRÌNH THI CÔNG MỚI - ĐÚNG THEO ẢNH ===
 const processSteps = [
   {
     number: "01",
-    title: "Tư vấn & Khảo sát chi tiết",
-    description: "Nghệ nhân trực tiếp đến tận nơi khảo sát miễn phí, đo đạc chính xác, tư vấn thiết kế phù hợp với không gian, phong thủy và ngân sách của bạn.",
+    title: "Khảo sát địa điểm thi công thực tế",
+    description: "Khảo sát địa điểm thi công thực tế. Tiên hành vẽ sơ bộ hồ cá, lấy thêm ý tưởng khách hàng muốn làm thêm cảnh quan của hồ.",
   },
   {
     number: "02",
-    title: "Thiết kế 3D & Báo giá minh bạch",
-    description: "Bản vẽ 3D chi tiết giúp bạn hình dung rõ công trình theo yêu cầu trước khi thi công, lựa chọn vật liệu và trang thiết bị. Báo giá chi tiết từng hạng mục, minh bạch 100%.",
+    title: "Lên ý tưởng & Thiết kế 3D",
+    description: "Lên ý tưởng về thiết kế 3D. Thiết kế vị trí hồ cá, độ dài, độ rộng, độ hợp nhất với mệnh của gia chủ, để hồ cá koi phong thủy nhất.",
   },
   {
     number: "03",
-    title: "Thi công chuẩn theo bản vẽ thiết kế",
-    description: "Thi công theo đúng bản vẽ đã duyệt, giám sát chất lượng chặt chẽ từng công đoạn, đảm bảo tiến độ và an toàn tuyệt đối.",
+    title: "Thi công theo đúng bản vẽ thiết kế",
+    description: "Thi công theo đúng bản vẽ thiết kế lắp đặt hệ thống lọc: hệ thống này giúp làm sạch, không cặn, không rêu, sạch mùi tanh, hệ thống này làm sạch đến 63%, các hệ thống dưới đây giúp sạch hồ cá triệt để.",
   },
   {
     number: "04",
-    title: "Lắp đặt hệ thống lọc, xử lý nước",
-    description: "Lắp đặt hệ thống lọc nước hiện đại, hướng dẫn vận hành và bàn giao công trình hoàn thiện với chế độ bảo hành dài hạn.",
+    title: "Bảo hành dài hạn",
+    description: "Bảo hành dài hạn. Các trường hợp bảo hành sẽ được ghi nhận và xử lý trong vòng 24h trong ngày làm việc hành chính từ thứ 2 – thứ 6, thứ 7 chủ nhật và các ngày nghỉ lễ chỉ hỗ trợ các trường hợp khẩn cấp.",
   },
 ]
 
 const galleryImages = [
   {
-    src: "/koi-pond-luxury-villa-night-lighting-waterfall.jpg",
+    src: "/15.jpg",
     alt: "Hồ Koi biệt thự cao cấp với hệ thống đèn LED đẹp lung linh",
-    caption: "Hồ Koi biệt thự Vinhomes - 50m²",
   },
   {
-    src: "/japanese-style-koi-pond-with-bridge-and-lantern.jpg",
+    src: "/16.jpg",
     alt: "Hồ Koi phong cách Nhật Bản với cầu gỗ và đèn lồng",
-    caption: "Hồ Koi phong cách Nhật - Resort Nha Trang",
   },
   {
-    src: "/modern-koi-pond-glass-wall-viewing-panel.jpg",
+    src: "/23.jpg",
     alt: "Hồ Koi hiện đại với tấm kính ngắm cá độc đáo",
-    caption: "Hồ Koi kính - Penthouse Quận 1",
   },
   {
-    src: "/natural-koi-pond-with-rocks-and-waterfall.jpg",
+    src: "/28.png",
     alt: "Hồ Koi tự nhiên với thác nước và đá tự nhiên",
-    caption: "Hồ Koi tự nhiên - Biệt thự Thảo Điền",
   },
   {
-    src: "/koi-pond-with-wooden-deck-and-gazebo.jpg",
+    src: "/32.jpg",
     alt: "Hồ Koi với sàn gỗ và chòi nghỉ sang trọng",
-    caption: "Hồ Koi sàn gỗ - Villa Đà Lạt",
-  },
-  {
-    src: "/indoor-koi-pond-lobby-design.jpg",
-    alt: "Hồ Koi trong nhà thiết kế hiện đại",
-    caption: "Hồ Koi sảnh - Khách sạn 5 sao",
   },
 ]
 
@@ -168,7 +154,7 @@ export default function KoiPondServicePage() {
         />
         
         <ServiceProcess 
-          title="Quy trình thi công" 
+          title="Quy trình thi công hồ cá Koi" 
           subtitle="4 bước chuyên nghiệp" 
           steps={processSteps} 
         />

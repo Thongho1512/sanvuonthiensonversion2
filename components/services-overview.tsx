@@ -11,7 +11,7 @@ const services = [
     description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản, đảm bảo môi trường sống lý tưởng cho cá với hệ thống lọc nước hiện đại.",
     image: "/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg",
     href: "/dich-vu/ho-ca-koi",
-    features: ["Thiết kế theo tiêu chuẩn Nhật Bản", "Hệ thống lọc đa tầng", "Bảo hành 5 năm"]
+    features: ["Thiết kế theo tiêu chuẩn Nhật Bản", "Hệ thống lọc đa tầng", "Bảo hành 10 năm"]
   },
   {
     number: "02",

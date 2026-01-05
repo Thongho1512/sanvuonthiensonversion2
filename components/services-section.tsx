@@ -10,21 +10,21 @@ const services = [
     title: "Thi công Hồ cá Koi",
     description: "Thiết kế và thi công hồ cá Koi đẹp, độc đáo, đảm bảo môi trường sống lý tưởng cho cá.",
     // Hình ảnh thực tế đẹp hơn placeholder
-    image: "https://images.squarespace-cdn.com/content/v1/57843c49440243c511147fed/1596575842029-Q7Q3PEBW54PCPBL1UZU4/Koi+by+Aurora+Santiago.jpg",
+    image: "23.jpg",
     href: "/dich-vu/ho-ca-koi",
   },
   {
     number: "02",
     title: "Hòn non bộ & Tiểu cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật mang vẻ đẹp thiên nhiên thu nhỏ vào không gian sống.",
-    image: "https://i.pinimg.com/736x/f7/e8/a8/f7e8a811c12ee6a1268eb6181b211fa6.jpg",
+    image: "43.jpg",
     href: "/dich-vu/hon-non-bo",
   },
   {
     number: "03",
     title: "Thiết kế Sân vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort với phong cách hiện đại kết hợp thiên nhiên.",
-    image: "https://antonovich-design.ae/uploads/post/2024/9/antonovich-design-2024vAZAtsV6UiBI.jpg",
+    image: "44.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]

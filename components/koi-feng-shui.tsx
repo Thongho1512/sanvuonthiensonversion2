@@ -42,9 +42,6 @@ export function KoiFengShui() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 mb-6">
-            <Compass className="h-8 w-8 text-accent" />
-          </div>
           <span className="text-sm tracking-widest uppercase text-accent">Phong thủy</span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-semibold text-foreground tracking-tight">
             Các yếu tố phong thủy của hồ cá Koi

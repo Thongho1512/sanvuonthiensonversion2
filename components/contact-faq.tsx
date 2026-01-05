@@ -18,7 +18,7 @@ const faqs = [
   {
     question: "Thiên Sơn có bảo hành công trình không?",
     answer:
-      "Có, tất cả công trình của Thiên Sơn được bảo hành 5 năm về kết cấu, chống thấm và hệ thống lọc. Chúng tôi cũng cung cấp dịch vụ bảo trì định kỳ với mức phí ưu đãi.",
+      "Có, tất cả công trình của Thiên Sơn được bảo hành 15 năm về kết cấu, chống thấm và hệ thống lọc. Chúng tôi cũng cung cấp dịch vụ bảo trì định kỳ với mức phí ưu đãi.",
   },
   {
     question: "Tôi có thể xem các mẫu thiết kế trước khi thi công không?",
