@@ -14,7 +14,7 @@ const contactMethods = [
     icon: Phone,
     title: "Gọi điện thoại",
     value: "0907 99 77 59",
-    href: "tel:0938386679",
+    href: "tel:0907997759",
     description: "Hotline tư vấn 24/7",
     color: "text-green-500",
     bgColor: "bg-green-500/10",

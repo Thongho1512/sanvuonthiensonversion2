@@ -52,7 +52,7 @@ export function GardenDesignCommitment() {
             </p>
             
             <a
-              href="tel:0938386679"
+              href="tel:0907997759"
               className="inline-flex items-center gap-3 px-8 py-4 bg-accent text-accent-foreground rounded-xl font-semibold hover:bg-accent/90 transition-all text-lg shadow-lg hover:shadow-xl"
             >
               <span>Liên hệ ngay</span>

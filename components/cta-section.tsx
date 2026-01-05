@@ -53,7 +53,7 @@ export function CTASection() {
                 variant="outline"
                 className="border-card/30 text-card hover:bg-card/10 text-base bg-transparent h-14 px-8"
               >
-                <a href="tel:0938386679">
+                <a href="tel:0907997759">
                   <Phone className="mr-2 h-5 w-5" />
                   0907 99 77 59
                 </a>
@@ -65,7 +65,7 @@ export function CTASection() {
                 variant="outline"
                 className="border-card/30 text-card hover:bg-card/10 text-base bg-transparent h-14 px-8"
               >
-                <a href="https://zalo.me/0938386679" target="_blank" rel="noopener noreferrer">
+                <a href="https://zalo.me/0907997759" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Chat Zalo
                 </a>

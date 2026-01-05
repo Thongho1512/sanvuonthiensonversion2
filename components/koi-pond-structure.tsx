@@ -183,7 +183,7 @@ export function KoiPondStructure() {
             với ngân sách và nhu cầu sử dụng của bạn.
           </p>
           <a
-            href="tel:0938386679"
+            href="tel:0907997759"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             <Hammer className="h-5 w-5" />

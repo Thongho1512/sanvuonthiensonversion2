@@ -63,7 +63,7 @@ export function ContactHero() {
             className="mt-10 flex flex-wrap gap-4"
           >
             <Link
-              href="tel:0938386679"
+              href="tel:0907997759"
               className="group flex items-center gap-3 px-6 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-all shadow-xl shadow-emerald-900/30 hover:shadow-2xl hover:shadow-emerald-900/40"
             >
               <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
@@ -76,7 +76,7 @@ export function ContactHero() {
             </Link>
 
             <Link
-              href="https://zalo.me/0938386679"
+              href="https://zalo.me/0907997759"
               target="_blank"
               className="group flex items-center gap-3 px-6 py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl hover:bg-gray-700/70 hover:border-blue-400/60 transition-all shadow-xl"
             >
