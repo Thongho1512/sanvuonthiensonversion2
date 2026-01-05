@@ -53,11 +53,11 @@ const officeInfo = [
 
 export function ContactFormSection() {
   return (
-    <section className="py-20 lg:py-32 bg-muted/50 relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 xl:py-32 bg-muted/50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+        <div className="absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -67,20 +67,20 @@ export function ContactFormSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center mb-12 sm:mb-16 lg:mb-20"
         >
-          <span className="text-base lg:text-lg tracking-widest uppercase text-accent font-semibold">
+          <span className="text-sm sm:text-base lg:text-lg tracking-widest uppercase text-accent font-semibold">
             Liên hệ với chúng tôi
           </span>
-          <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
+          <h2 className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight px-4">
             Sẵn sàng hỗ trợ bạn mọi lúc
           </h2>
-          <p className="mt-8 text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+          <p className="mt-4 sm:mt-6 lg:mt-8 text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto px-4">
             Hãy liên hệ với chúng tôi qua các kênh dưới đây để được tư vấn chi tiết và nhận báo giá phù hợp với nhu cầu của bạn.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-20 items-start">
+        <div className="grid lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-20 items-start">
           {/* Left Content - Benefits & Office */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -89,12 +89,12 @@ export function ContactFormSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6 sm:mb-8 lg:mb-10">
               Cam kết của chúng tôi
             </h3>
             
             {/* Benefits */}
-            <div className="space-y-6 mb-12">
+            <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon
                 return (
@@ -104,12 +104,12 @@ export function ContactFormSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="flex items-center gap-5"
+                    className="flex items-center gap-3 sm:gap-5"
                   >
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="h-8 w-8 text-primary" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
                     </div>
-                    <span className="text-xl lg:text-2xl font-semibold text-foreground">
+                    <span className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold text-foreground">
                       {benefit.text}
                     </span>
                   </motion.div>
@@ -118,7 +118,7 @@ export function ContactFormSection() {
             </div>
 
             {/* Office Info */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {officeInfo.map((info, index) => {
                 const Icon = info.icon
                 return (
@@ -128,14 +128,14 @@ export function ContactFormSection() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: (benefits.length + index) * 0.1 }}
-                    className="flex items-start gap-5"
+                    className="flex items-start gap-3 sm:gap-5"
                   >
-                    <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Icon className="h-8 w-8 text-accent" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
                     </div>
                     <div>
-                      <p className="text-xl lg:text-2xl font-bold text-foreground">{info.title}</p>
-                      <p className="text-lg lg:text-xl text-muted-foreground mt-2 leading-relaxed">
+                      <p className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-foreground">{info.title}</p>
+                      <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-muted-foreground mt-1 sm:mt-2 leading-relaxed">
                         {info.content}
                       </p>
                     </div>
@@ -153,7 +153,7 @@ export function ContactFormSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-3"
           >
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {contactMethods.map((method, index) => {
                 const Icon = method.icon
                 return (
@@ -168,20 +168,20 @@ export function ContactFormSection() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="block group"
                   >
-                    <div className="bg-card border border-border rounded-3xl p-8 hover:shadow-2xl hover:border-primary/50 transition-all duration-300">
-                      <div className="flex items-start gap-6">
-                        <div className={`w-20 h-20 rounded-2xl ${method.bgColor} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                          <Icon className={`h-10 w-10 ${method.color}`} />
+                    <div className="bg-card border border-border rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 hover:shadow-2xl hover:border-primary/50 transition-all duration-300">
+                      <div className="flex items-start gap-4 sm:gap-6">
+                        <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl ${method.bgColor} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                          <Icon className={`h-8 w-8 sm:h-10 sm:w-10 ${method.color}`} />
                         </div>
-                        <div className="flex-1">
-                          <h3 className="text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground group-hover:text-primary transition-colors break-words">
                             {method.title}
                           </h3>
-                          <p className="text-lg lg:text-xl text-muted-foreground mt-2">{method.description}</p>
-                          <p className="text-2xl lg:text-3xl font-bold text-foreground mt-4">{method.value}</p>
+                          <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-muted-foreground mt-1 sm:mt-2">{method.description}</p>
+                          <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mt-2 sm:mt-4 break-all">{method.value}</p>
                         </div>
                         <svg 
-                          className="w-6 h-6 text-muted-foreground group-hover:text-primary group-hover:translate-x-2 transition-all mt-2" 
+                          className="hidden sm:block w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground group-hover:text-primary group-hover:translate-x-2 transition-all mt-2 flex-shrink-0" 
                           fill="none" 
                           stroke="currentColor" 
                           viewBox="0 0 24 24"
@@ -201,17 +201,17 @@ export function ContactFormSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-12 p-8 lg:p-10 bg-primary/5 border border-primary/20 rounded-3xl"
+              className="mt-8 sm:mt-12 p-6 sm:p-8 lg:p-10 bg-primary/5 border border-primary/20 rounded-2xl sm:rounded-3xl"
             >
-              <div className="flex items-start gap-5">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-3 sm:gap-5">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
                 </div>
                 <div>
-                  <p className="text-2xl lg:text-3xl font-bold text-foreground mb-3">
+                  <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-2 sm:mb-3">
                     Phản hồi nhanh chóng
                   </p>
-                  <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-muted-foreground leading-relaxed">
                     Chúng tôi cam kết phản hồi mọi yêu cầu trong vòng <strong>2 giờ làm việc</strong>. 
                     Với các trường hợp khẩn cấp, vui lòng gọi điện trực tiếp để được hỗ trợ ngay lập tức.
                   </p>
@@ -219,7 +219,7 @@ export function ContactFormSection() {
               </div>
             </motion.div>
 
-            <p className="mt-10 text-base lg:text-lg text-muted-foreground text-center">
+            <p className="mt-6 sm:mt-8 lg:mt-10 text-xs sm:text-sm lg:text-base xl:text-lg text-muted-foreground text-center">
               Thông tin của bạn được bảo mật theo{" "}
               <a href="/chinh-sach-bao-mat" className="text-primary hover:underline font-medium">
                 chính sách bảo mật

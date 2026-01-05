@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export function ContactHero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center pt-20">
+    <section className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center pt-16 sm:pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -17,11 +17,11 @@ export function ContactHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 w-full">
         <div className="max-w-2xl">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/25 border border-emerald-400/40 text-sm text-emerald-300 font-semibold backdrop-blur-md shadow-lg">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-lg shadow-emerald-400/50" />
+            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-emerald-500/25 border border-emerald-400/40 text-xs sm:text-sm text-emerald-300 font-semibold backdrop-blur-md shadow-lg">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shadow-lg shadow-emerald-400/50" />
               Sẵn sàng hỗ trợ 24/7
             </span>
           </motion.div>
@@ -30,7 +30,7 @@ export function ContactHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-balance"
+            className="mt-4 sm:mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance leading-tight"
             style={{
               color: '#ffffff',
               textShadow: '0 4px 12px rgba(0, 0, 0, 0.8), 0 2px 4px rgba(0, 0, 0, 0.9)'
@@ -45,7 +45,7 @@ export function ContactHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 text-lg leading-relaxed"
+            className="mt-4 sm:mt-6 text-base sm:text-lg leading-relaxed"
             style={{
               color: '#e5e7eb',
               textShadow: '0 2px 8px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 1)'
@@ -60,59 +60,59 @@ export function ContactHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-6 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
           >
             <Link
               href="tel:0907997759"
-              className="group flex items-center gap-3 px-6 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-all shadow-xl shadow-emerald-900/30 hover:shadow-2xl hover:shadow-emerald-900/40"
+              className="group flex items-center justify-center sm:justify-start gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-all shadow-xl shadow-emerald-900/30 hover:shadow-2xl hover:shadow-emerald-900/40"
             >
-              <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
-                <Phone className="h-5 w-5" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center">
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
               </div>
               <div className="text-left">
-                <p className="text-sm text-white/90 font-medium">Gọi ngay</p>
-                <p className="font-bold text-lg">0907 99 77 59</p>
+                <p className="text-xs sm:text-sm text-white/90 font-medium">Gọi ngay</p>
+                <p className="font-bold text-base sm:text-lg">0907 99 77 59</p>
               </div>
             </Link>
 
             <Link
               href="https://zalo.me/0907997759"
               target="_blank"
-              className="group flex items-center gap-3 px-6 py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl hover:bg-gray-700/70 hover:border-blue-400/60 transition-all shadow-xl"
+              className="group flex items-center justify-center sm:justify-start gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl hover:bg-gray-700/70 hover:border-blue-400/60 transition-all shadow-xl"
             >
-              <div className="w-10 h-10 rounded-full bg-blue-500/30 flex items-center justify-center border border-blue-400/40">
-                <img src="/zalo-logo.png" alt="Zalo" className="h-6 w-6" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-500/30 flex items-center justify-center border border-blue-400/40">
+                <img src="/zalo-logo.png" alt="Zalo" className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
               <div className="text-left">
-                <p className="text-sm text-gray-200 font-medium">Chat Zalo</p>
-                <p className="font-bold text-white">Tư vấn nhanh</p>
+                <p className="text-xs sm:text-sm text-gray-200 font-medium">Chat Zalo</p>
+                <p className="font-bold text-white text-sm sm:text-base">Tư vấn nhanh</p>
               </div>
             </Link>
 
-            <div className="flex items-center gap-3 px-6 py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl shadow-xl">
-              <div className="w-10 h-10 rounded-full bg-amber-500/30 flex items-center justify-center border border-amber-400/40">
-                <Clock className="h-5 w-5 text-amber-300" />
+            <div className="flex items-center justify-center sm:justify-start gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 bg-gray-800/60 backdrop-blur-md border-2 border-gray-600/50 rounded-xl shadow-xl">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-amber-500/30 flex items-center justify-center border border-amber-400/40">
+                <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-amber-300" />
               </div>
               <div className="text-left">
-                <p className="text-sm text-gray-200 font-medium">Phản hồi trong</p>
-                <p className="font-bold text-white">Dưới 2 giờ</p>
+                <p className="text-xs sm:text-sm text-gray-200 font-medium">Phản hồi trong</p>
+                <p className="font-bold text-white text-sm sm:text-base">Dưới 2 giờ</p>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Decorative Elements */}
+      {/* Decorative Elements - Ẩn trên mobile */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="hidden lg:block absolute right-10 bottom-10 z-10"
+        className="hidden lg:block absolute right-6 xl:right-10 bottom-6 xl:bottom-10 z-10"
       >
         <div className="relative">
-          <div className="w-32 h-32 rounded-full bg-emerald-600/30 backdrop-blur-md border-2 border-emerald-400/40 flex items-center justify-center shadow-2xl">
+          <div className="w-28 h-28 xl:w-32 xl:h-32 rounded-full bg-emerald-600/30 backdrop-blur-md border-2 border-emerald-400/40 flex items-center justify-center shadow-2xl">
             <div className="text-center">
-              <p className="text-3xl font-bold text-white" style={{
+              <p className="text-2xl xl:text-3xl font-bold text-white" style={{
                 textShadow: '0 2px 8px rgba(0, 0, 0, 0.8)'
               }}>50+</p>
               <p className="text-xs text-gray-200 font-medium" style={{
