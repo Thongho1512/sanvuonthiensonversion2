@@ -9,7 +9,7 @@ const services = [
     number: "01",
     title: "Thi công Hồ cá Koi",
     description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản, đảm bảo môi trường sống lý tưởng cho cá với hệ thống lọc nước hiện đại.",
-    image: "/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg",
+    image: "/15.jpg",
     href: "/dich-vu/ho-ca-koi",
     features: ["Thiết kế theo tiêu chuẩn Nhật Bản", "Hệ thống lọc đa tầng", "Bảo hành 10 năm"]
   },
@@ -17,7 +17,7 @@ const services = [
     number: "02",
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy với đá tự nhiên cao cấp và nghệ nhân lành nghề hơn 15 năm kinh nghiệm.",
-    image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
+    image: "/43.jpg",
     href: "/dich-vu/hon-non-bo",
     features: ["Tư vấn phong thủy", "Đá tự nhiên cao cấp", "Thiết kế độc quyền"]
   },
@@ -25,7 +25,7 @@ const services = [
     number: "03",
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp với phong cách đa dạng, tích hợp công nghệ thông minh và hệ thống tưới tự động.",
-    image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
+    image: "/44.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
     features: ["Thiết kế 3D chuyên nghiệp", "Cây xanh nhập khẩu", "Hệ thống tưới thông minh"]
   },

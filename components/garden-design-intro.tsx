@@ -47,7 +47,7 @@ export function GardenDesignIntro() {
           >
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/luxury-villa-garden-design-with-pathway-fountain-a.jpg"
+                src="/20.jpg"
                 alt="Tiểu cảnh sân vườn đẹp"
                 className="w-full h-full object-cover"
               />

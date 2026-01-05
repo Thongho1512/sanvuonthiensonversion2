@@ -119,13 +119,13 @@ const relatedServices = [
   {
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy",
-    image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
+    image: "/43.jpg",
     href: "/dich-vu/hon-non-bo",
   },
   {
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
-    image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
+    image: "/44.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]
@@ -139,7 +139,7 @@ export default function KoiPondServicePage() {
           title="Thi Công Hồ Cá Koi"
           subtitle="Dịch vụ chuyên nghiệp"
           description="Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản, kết hợp kỹ thuật hiện đại và nghệ thuật truyền thống để tạo nên không gian sống lý tưởng cho cá Koi."
-          image="/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg"
+          image="/42.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Hồ cá Koi" }]}
         />
         

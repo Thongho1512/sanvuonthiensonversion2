@@ -77,34 +77,28 @@ const processSteps = [
 
 const galleryImages = [
   {
-    src: "/traditional-vietnamese-rock-garden-with-waterfall.jpg",
+    src: "/24.jpg",
     alt: "Hòn non bộ truyền thống",
-    caption: "Hòn non bộ biệt thự Phú Mỹ Hưng",
   },
   {
-    src: "/zen-rock-garden-japanese-style-meditation.jpg",
+    src: "/25.jpg",
     alt: "Tiểu cảnh Zen",
-    caption: "Tiểu cảnh Zen - Spa & Resort",
   },
   {
-    src: "/miniature-mountain-landscape-bonsai-waterfall.jpg",
+    src: "/26.png",
     alt: "Non bộ với thác nước",
-    caption: "Non bộ thác nước - Văn phòng",
   },
   {
-    src: "/rock-garden-entrance-gate-feng-shui.jpg",
+    src: "/35.jpg",
     alt: "Tiểu cảnh cổng vào",
-    caption: "Tiểu cảnh phong thủy - Biệt thự Q9",
   },
   {
-    src: "/indoor-rock-garden-lobby-corporate.jpg",
+    src: "/37.jpg",
     alt: "Tiểu cảnh trong nhà",
-    caption: "Tiểu cảnh sảnh - Tòa nhà văn phòng",
   },
   {
-    src: "/rock-garden-with-koi-pond-integration.jpg",
+    src: "/43.jpg",
     alt: "Non bộ kết hợp hồ Koi",
-    caption: "Non bộ + hồ Koi - Villa Vũng Tàu",
   },
 ]
 
@@ -112,13 +106,13 @@ const relatedServices = [
   {
     title: "Thi Công Hồ Cá Koi",
     description: "Thiết kế và thi công hồ cá Koi theo tiêu chuẩn Nhật Bản",
-    image: "/beautiful-japanese-koi-pond-with-colorful-koi-fish.jpg",
+    image: "/15.jpg",
     href: "/dich-vu/ho-ca-koi",
   },
   {
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
-    image: "/luxury-villa-garden-design-with-pathway-fountain-a.jpg",
+    image: "/44.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]
@@ -132,7 +126,7 @@ export default function RockGardenServicePage() {
           title="Hòn Non Bộ & Tiểu Cảnh"
           subtitle="Nghệ thuật tự nhiên thu nhỏ"
           description="Tạo tác hòn non bộ, tiểu cảnh nghệ thuật mang vẻ đẹp núi non sông suối vào không gian sống của bạn. Kết hợp phong thủy cổ truyền và thẩm mỹ hiện đại."
-          image="/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg"
+          image="/43.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Hòn non bộ" }]}
         />
         

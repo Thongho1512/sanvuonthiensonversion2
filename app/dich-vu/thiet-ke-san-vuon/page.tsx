@@ -1,15 +1,18 @@
-import type { Metadata } from "next"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { ServiceHero } from "@/components/service-hero"
-import { ServiceFeatures } from "@/components/service-features"
-import { ServiceProcess } from "@/components/service-process"
-import { ServiceGallery } from "@/components/service-gallery"
-import { ServiceCTA } from "@/components/service-cta"
-import { RelatedServices } from "@/components/related-services"
-import { GardenDesignIntro } from "@/components/garden-design-intro"
-import { GardenDesignBenefits } from "@/components/garden-design-benefits"
-import { GardenDesignCommitment } from "@/components/garden-design-commitment"
+import { ServiceCTA } from "@/components/service-cta";
+import { RelatedServices } from "@/components/related-services";
+import { GardenDesignIntro } from "@/components/garden-design-intro";
+import { GardenDesignBenefits } from "@/components/garden-design-benefits";
+import { GardenDesignCommitment } from "@/components/garden-design-commitment";
+
+// Change all default imports → named imports
+import { ServiceHero } from "@/components/service-hero";
+import { ServiceFeatures } from "@/components/service-features";
+import { ServiceProcess } from "@/components/service-process";
+import { ServiceGallery } from "@/components/service-gallery";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Thiết Kế Tiểu Cảnh Sân Vườn | Thiên Sơn Landscape",
@@ -23,9 +26,9 @@ export const metadata: Metadata = {
     "sân vườn đẹp",
     "thiết kế tiểu cảnh",
     "cảnh quan sân vườn",
-    "sân vườn biệt thự"
+    "sân vườn biệt thự",
   ],
-}
+};
 
 const features = [
   {
@@ -58,7 +61,7 @@ const features = [
     title: "Tăng Giá Trị Bất Động Sản",
     description: "Một sân vườn đẹp sẽ tăng giá trị của ngôi nhà và tài sản của bạn đáng kể.",
   },
-]
+];
 
 const processSteps = [
   {
@@ -78,48 +81,21 @@ const processSteps = [
   },
   {
     number: "04",
-    title: "Ký hợp đồng và triển khai thi công",
-    description: "Ký kết hợp đồng chính thức, triển khai thi công theo đúng thiết kế đã duyệt và tiến hành giám sát chất lượng.",
+    title: "Triển khai thi công",
+    description: "Triển khai thi công theo đúng thiết kế đã duyệt và tiến hành giám sát chất lượng.",
   },
   {
     number: "05",
     title: "Hoàn thiện và hướng dẫn kỹ thuật",
     description: "Bàn giao công trình hoàn thiện, hướng dẫn kỹ thuật chăm sóc và bảo dưỡng sân vườn cho gia chủ.",
   },
-]
+];
 
 const galleryImages = [
-  {
-    src: "/modern-villa-garden-with-swimming-pool.jpg",
-    alt: "Sân vườn biệt thự hiện đại",
-    caption: "Biệt thự Phú Mỹ Hưng - 500m²",
-  },
-  {
-    src: "/tropical-resort-garden-landscape-design.jpg",
-    alt: "Sân vườn resort nhiệt đới",
-    caption: "Resort Phú Quốc - 2000m²",
-  },
-  {
-    src: "/japanese-garden-design-with-pathway.jpg",
-    alt: "Sân vườn Nhật Bản",
-    caption: "Villa Thảo Điền - Phong cách Nhật",
-  },
-  {
-    src: "/minimalist-garden-design-modern-home.jpg",
-    alt: "Sân vườn tối giản",
-    caption: "Nhà phố Quận 2 - Minimalist",
-  },
-  {
-    src: "/rooftop-garden-terrace-design.jpg",
-    alt: "Vườn sân thượng",
-    caption: "Penthouse Landmark 81",
-  },
-  {
-    src: "/cottage-garden-design-flowers.jpg",
-    alt: "Vườn hoa cottage",
-    caption: "Villa Đà Lạt - English Garden",
-  },
-]
+  { src: "/21.jpg", alt: "Sân vườn biệt thự hiện đại" },
+  { src: "/44.jpg", alt: "Sân vườn resort nhiệt đới" },
+  { src: "/26.png", alt: "Sân vườn Nhật Bản" },
+];
 
 const relatedServices = [
   {
@@ -134,7 +110,7 @@ const relatedServices = [
     image: "/elegant-rock-garden-bonsai-miniature-landscape-wit.jpg",
     href: "/dich-vu/hon-non-bo",
   },
-]
+];
 
 export default function GardenDesignServicePage() {
   return (
@@ -145,45 +121,45 @@ export default function GardenDesignServicePage() {
           title="Thiết Kế Tiểu Cảnh Sân Vườn"
           subtitle="Nghệ thuật tạo không gian xanh"
           description="Thiết kế tiểu cảnh sân vườn là nghệ thuật tạo ra không gian ngoại trời hài hòa và thú vị bằng cách sắp xếp cây cỏ, hoa lá, đá, nước, và các chi tiết trang trí theo cách độc đáo và sáng tạo."
-          image="/luxury-villa-garden-design-with-pathway-fountain-a.jpg"
-          breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Thiết kế sân vườn" }]}
+          image="/44.jpg"
+          breadcrumbs={[
+            { label: "Dịch vụ", href: "/dich-vu" },
+            { label: "Thiết kế sân vườn" },
+          ]}
         />
-        
+
         <GardenDesignIntro />
-        
         <GardenDesignBenefits />
-        
-        <ServiceFeatures 
-          title="Dịch vụ thiết kế tiểu cảnh sân vườn của Thiên Sơn Landscape" 
-          subtitle="Có gì đặc biệt?" 
-          features={features} 
+
+        <ServiceFeatures
+          title="Dịch vụ thiết kế tiểu cảnh sân vườn của Thiên Sơn Landscape"
+          subtitle="Có gì đặc biệt?"
+          features={features}
         />
-        
-        <ServiceProcess 
-          title="Quy trình triển khai thiết kế thi công" 
-          subtitle="5 giai đoạn chuyên nghiệp" 
-          steps={processSteps} 
+
+        <ServiceProcess
+          title="Quy trình triển khai thiết kế thi công"
+          subtitle="5 giai đoạn chuyên nghiệp"
+          steps={processSteps}
         />
-        
-        <ServiceGallery 
-          title="Dự án tiểu cảnh sân vườn tiêu biểu" 
-          subtitle="Công trình thực tế" 
-          images={galleryImages} 
+
+        <ServiceGallery
+          title="Dự án tiểu cảnh sân vườn tiêu biểu"
+          subtitle="Công trình thực tế"
+          images={galleryImages}
         />
-        
+
         <GardenDesignCommitment />
-        
+
         <ServiceCTA
           title="Bạn muốn sở hữu một sân vườn đẹp?"
           description="Liên hệ ngay để được tư vấn miễn phí tận nơi và nhận báo giá chi tiết cho dự án của bạn."
         />
-        
-        <RelatedServices 
-          currentService="Thiết Kế Sân Vườn" 
-          services={relatedServices} 
-        />
+
+        {/* Fixed: remove currentService prop if the component doesn't support it */}
+        <RelatedServices services={relatedServices} />
       </main>
       <Footer />
     </>
-  )
+  );
 }

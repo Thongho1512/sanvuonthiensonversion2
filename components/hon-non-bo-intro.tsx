@@ -44,7 +44,7 @@ export function HonNonBoIntro() {
           >
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               <video
-                src="/hon-non-bo-waterfall.mp4"
+                src="/3d/7.mp4"
                 autoPlay
                 loop
                 muted

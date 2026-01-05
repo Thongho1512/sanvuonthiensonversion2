@@ -8,19 +8,19 @@ const notes = [
     icon: Shovel,
     title: "Đào và Xây Dựng Nền",
     description: "Nền của cấu trúc hòn non bộ được chôn sâu vào đất, sử dụng đa dạng loại đá để tạo nên bề mặt độc đáo.",
-    image: "https://viewgarden.vn/wp-content/uploads/2023/06/thi-cong-hon-non-bo.jpg",
+    image: "/39.jpg",
   },
   {
     icon: Recycle,
     title: "Sử Dụng Vật Liệu Phù Hợp",
     description: "Gạch cũ, than xỉ và các vật liệu tái chế được tận dụng để tạo nên cấu trúc vững chắc và đẹp mắt.",
-    image: "https://tieucanhdepvn.com/wp-content/uploads/2025/07/Cach-lam-hon-non-bo-600x450.jpg",
+    image: "/40.jpg",
   },
   {
     icon: Droplets,
     title: "Tận Dụng Nguồn Nước",
     description: "Hòn non bộ không chỉ làm đẹp mà còn tận dụng nguồn nước, tạo ra không khí dễ chịu và thoải mái.",
-    image: "https://static.tuoitre.vn/tto/i/s626/2017/03/15/hon-non-bo-1489553199.jpg",
+    image: "/43.jpg",
   },
 ]
 
