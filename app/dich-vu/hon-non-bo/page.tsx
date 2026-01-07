@@ -112,7 +112,7 @@ const relatedServices = [
   {
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
-    image: "/44.jpg",
+    image: "/46.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]
@@ -126,7 +126,7 @@ export default function RockGardenServicePage() {
           title="Hòn Non Bộ & Tiểu Cảnh"
           subtitle="Nghệ thuật tự nhiên thu nhỏ"
           description="Tạo tác hòn non bộ, tiểu cảnh nghệ thuật mang vẻ đẹp núi non sông suối vào không gian sống của bạn. Kết hợp phong thủy cổ truyền và thẩm mỹ hiện đại."
-          image="/43.jpg"
+          image="/49.jpg"
           breadcrumbs={[{ label: "Dịch vụ", href: "/dich-vu" }, { label: "Hòn non bộ" }]}
         />
         

@@ -111,7 +111,7 @@ export function KoiPondCommitment() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-xl overflow-hidden border-4 border-accent/30">
                 <img
-                  src="/42.jpg"
+                  src="/45.jpg"
                   alt="Nghệ nhân thi công hồ cá Koi"
                   className="w-full h-full object-cover"
                 />

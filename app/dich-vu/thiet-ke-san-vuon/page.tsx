@@ -107,7 +107,7 @@ const relatedServices = [
   {
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy",
-    image: "/43.jpg",
+    image: "/47.jpg",
     href: "/dich-vu/hon-non-bo",
   },
 ];
@@ -121,7 +121,7 @@ export default function GardenDesignServicePage() {
           title="Thiết Kế Tiểu Cảnh Sân Vườn"
           subtitle="Nghệ thuật tạo không gian xanh"
           description="Thiết kế tiểu cảnh sân vườn là nghệ thuật tạo ra không gian ngoại trời hài hòa và thú vị bằng cách sắp xếp cây cỏ, hoa lá, đá, nước, và các chi tiết trang trí theo cách độc đáo và sáng tạo."
-          image="/44.jpg"
+          image="/46.jpg"
           breadcrumbs={[
             { label: "Dịch vụ", href: "/dich-vu" },
             { label: "Thiết kế sân vườn" },

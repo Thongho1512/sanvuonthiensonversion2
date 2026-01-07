@@ -119,13 +119,13 @@ const relatedServices = [
   {
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy",
-    image: "/43.jpg",
+    image: "/47.jpg",
     href: "/dich-vu/hon-non-bo",
   },
   {
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp",
-    image: "/44.jpg",
+    image: "/46.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
   },
 ]

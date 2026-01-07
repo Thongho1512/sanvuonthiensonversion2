@@ -8,15 +8,15 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     category: "Hồ cá Koi",
-    image: "/42.jpg",
+    image: "/10.jpg",
   },
   {
-    category: "Thiết kế sân vườn",
-    image: "/38.jpg",
+    category: "Sân vườn",
+    image: "/46.jpg",
   },
   {
     category: "Hòn non bộ",
-    image: "/37.jpg",
+    image: "/25.jpg",
   },
   // Bạn có thể thêm nhiều hơn nếu cần, ví dụ:
   // {

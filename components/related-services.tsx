@@ -22,7 +22,7 @@ export function RelatedServices({ currentService, services: propServices }: Rela
     {
       title: "Hòn Non Bộ & Tiểu Cảnh",
       description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy, mang lại sự hài hòa và vượng khí cho không gian sống.",
-      image: "/43.jpg",
+      image: "/47.jpg",
       href: "/dich-vu/hon-non-bo",
     },
     {

@@ -17,7 +17,7 @@ const services = [
     number: "02",
     title: "Hòn Non Bộ & Tiểu Cảnh",
     description: "Tạo tác hòn non bộ, tiểu cảnh nghệ thuật theo phong thủy với đá tự nhiên cao cấp và nghệ nhân lành nghề hơn 15 năm kinh nghiệm.",
-    image: "/43.jpg",
+    image: "/47.jpg",
     href: "/dich-vu/hon-non-bo",
     features: ["Tư vấn phong thủy", "Đá tự nhiên cao cấp", "Thiết kế độc quyền"]
   },
@@ -25,7 +25,7 @@ const services = [
     number: "03",
     title: "Thiết Kế Sân Vườn",
     description: "Quy hoạch và thiết kế sân vườn biệt thự, resort cao cấp với phong cách đa dạng, tích hợp công nghệ thông minh và hệ thống tưới tự động.",
-    image: "/44.jpg",
+    image: "/46.jpg",
     href: "/dich-vu/thiet-ke-san-vuon",
     features: ["Thiết kế 3D chuyên nghiệp", "Cây xanh nhập khẩu", "Hệ thống tưới thông minh"]
   },
