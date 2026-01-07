@@ -11,7 +11,7 @@ export function CTASection() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/beautiful-zen-garden-sunset-golden-hour-with-water.jpg" 
+          src="/21.jpg" 
           alt="Background" 
           className="w-full h-full object-cover" 
         />

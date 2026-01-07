@@ -104,7 +104,7 @@ export function WhyChooseUs() {
           >
             <div className="aspect-[4/5] lg:aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/15.jpg"
+                src="/22.jpg"
                 alt="Đội ngũ thi công chuyên nghiệp tại Thiên Sơn Landscape"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
