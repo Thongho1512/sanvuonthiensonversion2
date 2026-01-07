@@ -121,7 +121,7 @@ export default function GardenDesignServicePage() {
           title="Thiết Kế Tiểu Cảnh Sân Vườn"
           subtitle="Nghệ thuật tạo không gian xanh"
           description="Thiết kế tiểu cảnh sân vườn là nghệ thuật tạo ra không gian ngoại trời hài hòa và thú vị bằng cách sắp xếp cây cỏ, hoa lá, đá, nước, và các chi tiết trang trí theo cách độc đáo và sáng tạo."
-          image="/46.jpg"
+          image="/17.jpg"
           breadcrumbs={[
             { label: "Dịch vụ", href: "/dich-vu" },
             { label: "Thiết kế sân vườn" },

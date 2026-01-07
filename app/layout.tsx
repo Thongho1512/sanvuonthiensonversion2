@@ -2,8 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleTagManager } from "@next/third-parties/google"  // Thêm dòng này
 import { FloatingContact } from "@/components/floating-contact"
-import Script from "next/script"
 import "./globals.css"
 
 const cormorant = Cormorant_Garamond({
@@ -37,29 +37,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" suppressHydrationWarning>
-      <head>
-        {/* Google Tag Manager - Head Section */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TMCSL6SS');
-          `}
-        </Script>
-      </head>
+      <head />
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased`}>
-        {/* Google Tag Manager (noscript) - Body Section */}
+        <GoogleTagManager gtmId="GTM-TMCSL8G8" />
+
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TMCSL6SS"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TMCSL8G8"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        
+
         {children}
         <FloatingContact />
         <Analytics />

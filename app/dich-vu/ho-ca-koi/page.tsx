@@ -105,13 +105,18 @@ const galleryImages = [
     src: "/23.jpg",
     alt: "Hồ Koi hiện đại với tấm kính ngắm cá độc đáo",
   },
-  {
-    src: "/28.png",
-    alt: "Hồ Koi tự nhiên với thác nước và đá tự nhiên",
-  },
+  
   {
     src: "/32.jpg",
     alt: "Hồ Koi với sàn gỗ và chòi nghỉ sang trọng",
+  },
+  {
+    src: "/50.jpg",
+    alt: "Hồ Koi sang trọng",
+  },
+  {
+    src: "/28.png",
+    alt: "Hồ Koi tự nhiên với thác nước và đá tự nhiên",
   },
 ]
 

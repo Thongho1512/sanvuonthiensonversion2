@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 const projects = [
   {
     category: "Hồ cá Koi",
-    image: "/49.jpg",
+    image: "/50.jpg",
   },
   {
     category: "Sân vườn",
