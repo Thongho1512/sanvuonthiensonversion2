@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Cormorant_Garamond, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { FloatingContact } from "@/components/floating-contact"
+import Script from "next/script"
+
 import "./globals.css"
 
 const cormorant = Cormorant_Garamond({
@@ -38,7 +40,9 @@ export default function RootLayout({
     <html lang="vi" suppressHydrationWarning>
       <head>
         {/* Google Tag Manager */}
-        <script
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,7 +50,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TMCSL8G8');`
           }}
-        ></script>
+        />
+        {/* End Google Tag Manager */}
       </head>
       <body className={`${cormorant.variable} ${inter.variable} font-sans antialiased`}>
         {/* Google Tag Manager (noscript) */}
