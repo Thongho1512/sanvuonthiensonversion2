@@ -6,9 +6,8 @@ export function Footer() {
   return (
     <footer className="bg-gradient-to-b from-slate-900 to-slate-800 text-white py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section - Logo, Info & Links */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 mb-8 pb-8 border-b border-slate-700">
-          {/* Company Logo & Info */}
+          {/* Column 1 - Logo & Contact */}
           <div className="lg:col-span-1">
             <div className="mb-8 transition-transform duration-300 hover:scale-105">
               <Image
@@ -30,7 +29,6 @@ export function Footer() {
               Thiết kế & thi công hồ cá Koi, hòn non bộ, cảnh quan sân vườn
             </p>
 
-            {/* Contact Info */}
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3">
                 <Mail size={20} className="text-emerald-400 flex-shrink-0" />
@@ -41,6 +39,7 @@ export function Footer() {
                   sanvuonthienson@gmail.com
                 </a>
               </div>
+
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-emerald-400 flex-shrink-0" />
                 <a
@@ -52,7 +51,6 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Social Media */}
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/SanVuonThienSon"
@@ -63,6 +61,7 @@ export function Footer() {
               >
                 f
               </a>
+
               <a
                 href="https://www.youtube.com/@sanvuonthienson"
                 target="_blank"
@@ -75,7 +74,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Column 2 - Services */}
           <div>
             <h3 className="font-bold text-lg lg:text-xl mb-5 text-white">Dịch Vụ</h3>
             <ul className="space-y-3">
@@ -122,7 +121,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Branches Info */}
+          {/* Column 3 - Branches */}
           <div>
             <h3 className="font-bold text-lg lg:text-xl mb-5 text-white">Cơ Sở</h3>
             <ul className="space-y-4">
@@ -141,7 +140,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Main Office */}
+          {/* Column 4-5 - Main Office + Map */}
           <div className="lg:col-span-2">
             <h3 className="font-bold text-lg lg:text-xl mb-5 text-white">Trụ Sở Chính</h3>
             <div className="flex items-start gap-3 mb-6">
@@ -151,17 +150,16 @@ export function Footer() {
               </p>
             </div>
 
-            {/* Google Maps Embed - Updated with correct coordinates and removed grayscale */}
             <div className="aspect-video rounded-lg overflow-hidden border border-slate-700">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4!2d106.646!3d10.863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUxJzQ2LjgiTiAxMDbCsDM4JzQ1LjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858!2d106.651!3d10.840!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUwJzI0LjAiTiAxMDbCsDM5JzAzLjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Bản đồ văn phòng Thiên Sơn"
+                title="Bản đồ văn phòng Thiên Sơn - 385 Phan Huy Ích, Phường 14, Gò Vấp"
               />
             </div>
           </div>
@@ -169,12 +167,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-6">
-          {/* Copyright */}
           <div className="text-sm lg:text-base text-gray-400">
             <p>© 2025 Sân Vườn Thiên Sơn. All rights reserved.</p>
           </div>
 
-          {/* Policies */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 text-sm lg:text-base">
             <Link
               href="/dieu-khoan-dich-vu"

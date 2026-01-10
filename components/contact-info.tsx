@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button"
 const offices = [
   {
     city: "TP. Hồ Chí Minh",
-    address: "178/19/33 Trương Thị Hoa, P.Tân Thới Hiệp, Q12",
+    address: "385 Phan Huy Ích, Phường 14, Gò Vấp, Thành phố Hồ Chí Minh",
     phone: "0907 99 77 59",
     email: "sanvuonthienson@gmail.com",
     hours: "8:00 - 18:00",
-    mapUrl: "https://maps.google.com/?q=10.863,106.646",
+    mapUrl: "https://maps.google.com/?q=385+Phan+Huy+Ích+Phường+14+Gò+Vấp+TP+HCM",
     isMain: true,
   },
   {
@@ -110,7 +110,7 @@ export function ContactInfo() {
           ))}
         </div>
 
-        {/* Full Width Map - Updated with correct coordinates and removed grayscale */}
+        {/* Full Width Map */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -119,14 +119,14 @@ export function ContactInfo() {
           className="rounded-2xl overflow-hidden border border-border"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4!2d106.646!3d10.863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUxJzQ2LjgiTiAxMDbCsDM4JzQ1LjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.858!2d106.651!3d10.840!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDUwJzI0LjAiTiAxMDbCsDM5JzAzLjYiRQ!5e0!3m2!1svi!2s!4v1234567890"
             width="100%"
             height="400"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Bản đồ văn phòng Thiên Sơn"
+            title="Bản đồ văn phòng Thiên Sơn - 385 Phan Huy Ích, Phường 14, Gò Vấp"
           />
         </motion.div>
       </div>
