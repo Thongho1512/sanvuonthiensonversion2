@@ -19,10 +19,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Sân Vườn Thiên Sơn | Thiết Kế & Thi Công Sân Vườn Cao Cấp",
+  title: "Sân Vườn Thiên Sơn | Thiết Kế & Thi Công Hồ Cá Koi, Hòn Non Bộ Và Sân Vườn Cao Cấp",
   description:
     "Chuyên thiết kế và thi công hồ cá Koi, hòn non bộ, tiểu cảnh sân vườn cao cấp. Đội ngũ chuyên nghiệp với hơn 15 năm kinh nghiệm.",
-  keywords: ["sân vườn", "hồ cá koi", "hòn non bộ", "tiểu cảnh", "thiết kế sân vườn", "thi công sân vườn"],
+  keywords: ["sân vườn", "hồ cá koi", "Làm Hồ Cá", "hòn non bộ", "tiểu cảnh", "thiết kế sân vườn", "thi công sân vườn"],
   generator: "v0.app",
   icons: {
     icon: "/logo-removebg-preview.png",
