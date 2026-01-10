@@ -147,7 +147,7 @@ export function Footer() {
             <div className="flex items-start gap-3 mb-6">
               <MapPin size={22} className="text-emerald-400 flex-shrink-0 mt-1" />
               <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
-                178/19/33 Trương Thị Hoa, P.Tân Thới Hiệp, Q12, TP.HCM
+                385 Phan Huy Ích, Phường 14, Gò Vấp, Thành phố Hồ Chí Minh
               </p>
             </div>
 

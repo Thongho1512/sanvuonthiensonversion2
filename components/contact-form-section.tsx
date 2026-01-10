@@ -47,7 +47,7 @@ const officeInfo = [
   {
     icon: MapPin,
     title: "Trụ sở chính",
-    content: "178/19/33 Trương Thị Hoa, P.Tân Thới Hiệp, Q12, TP.HCM",
+    content: "385 Phan Huy Ích, Phường 14, Gò Vấp, Thành phố Hồ Chí Minh",
   },
 ]
 
